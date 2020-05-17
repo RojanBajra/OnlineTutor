@@ -20,19 +20,22 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func setupUI() {
+        self.collectionView.register(UINib(nibName: "DashboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DashboardCollectionViewCell.identifier)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        
         
         lblTitle.font = UIFont.boldSystemFont(ofSize: 24.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return 14
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCVC", for: indexPath) as! DashboardCollectionViewCell
         
+        cell.lblName.text = "rojan"
         
         return cell
     }

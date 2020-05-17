@@ -9,7 +9,10 @@
 import UIKit
 
 class DashboardCollectionViewCell: UICollectionViewCell {
-
+    
+    static var identifier = "DashboardCVC"
+    @IBOutlet weak var lblName: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
