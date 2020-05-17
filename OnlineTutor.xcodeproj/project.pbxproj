@@ -13,6 +13,9 @@
 		24183D742470642B009D74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D722470642B009D74B6 /* Main.storyboard */; };
 		24183D762470642C009D74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D752470642C009D74B6 /* Assets.xcassets */; };
 		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
+		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
+		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
+		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		24183D752470642C009D74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24183D782470642C009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		24183D6B2470642B009D74B6 /* OnlineTutor */ = {
 			isa = PBXGroup;
 			children = (
+				24CCB51324716F7D00DF435B /* xibCell */,
+				24CCB51024716DBB00DF435B /* ViewController */,
 				24183D6C2470642B009D74B6 /* AppDelegate.swift */,
 				24183D6E2470642B009D74B6 /* art.scnassets */,
 				24183D702470642B009D74B6 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				24183D7A2470642C009D74B6 /* Info.plist */,
 			);
 			path = OnlineTutor;
+			sourceTree = "<group>";
+		};
+		24CCB51024716DBB00DF435B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24CCB51124716DDE00DF435B /* DashboardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		24CCB51324716F7D00DF435B /* xibCell */ = {
+			isa = PBXGroup;
+			children = (
+				24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */,
+				24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */,
+			);
+			path = xibCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +154,7 @@
 				24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */,
 				24183D762470642C009D74B6 /* Assets.xcassets in Resources */,
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
+				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				24183D712470642B009D74B6 /* ViewController.swift in Sources */,
+				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
+				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

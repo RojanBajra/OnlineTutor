@@ -22,12 +22,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="Omw-Ik-A2b" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="Omw-Ik-A2b" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="Omw-Ik-A2b" secondAttribute="trailing" id="XyZ-9z-H8e"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <viewLayoutGuide key="safeArea" id="Omw-Ik-A2b"/>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
@@ -37,24 +37,22 @@
             </objects>
             <point key="canvasLocation" x="139" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--Dashboard View Controller-->
         <scene sceneID="Kfz-GV-Lan">
             <objects>
-                <viewController id="eH2-b0-WG9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DashboardVC" id="eH2-b0-WG9" customClass="DashboardViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2kr-rt-CQT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-yK-xqc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-s5-cib">
                                 <rect key="frame" x="20" y="44" width="374" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7re-Uw-EjK">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7re-Uw-EjK">
                                 <rect key="frame" x="0.0" y="73" width="414" height="789"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EBI-Cs-ZK7">
                                     <size key="itemSize" width="50" height="50"/>
@@ -75,8 +73,21 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="uKI-xu-h26"/>
+                        <constraints>
+                            <constraint firstItem="7re-Uw-EjK" firstAttribute="top" secondItem="HQy-s5-cib" secondAttribute="bottom" constant="8" id="4kf-m3-wqb"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="bottom" secondItem="7re-Uw-EjK" secondAttribute="bottom" id="Qva-Ik-BSo"/>
+                            <constraint firstItem="7re-Uw-EjK" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" id="TYp-Dm-eMj"/>
+                            <constraint firstItem="HQy-s5-cib" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" constant="20" id="Tit-tV-MMX"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="7re-Uw-EjK" secondAttribute="trailing" id="cev-TI-qCa"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="HQy-s5-cib" secondAttribute="trailing" constant="20" id="cfs-Qk-Nbl"/>
+                            <constraint firstItem="HQy-s5-cib" firstAttribute="top" secondItem="ePk-ph-miH" secondAttribute="top" id="qwJ-o6-bhT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ePk-ph-miH"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="7re-Uw-EjK" id="Jch-Ax-Ltr"/>
+                        <outlet property="lblTitle" destination="HQy-s5-cib" id="CaQ-1A-LRl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgy-oO-ndO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
