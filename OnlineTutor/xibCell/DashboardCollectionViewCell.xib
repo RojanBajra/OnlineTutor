@@ -18,31 +18,28 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmQ-FJ-jTK">
                         <rect key="frame" x="0.0" y="0.0" width="131" height="138"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-6K-rIJ">
-                                <rect key="frame" x="8" y="16" width="115" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-6K-rIJ">
+                                <rect key="frame" x="8" y="8" width="83" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="5fW-6K-rIJ" firstAttribute="top" secondItem="rmQ-FJ-jTK" secondAttribute="top" constant="16" id="F0q-BZ-dnc"/>
-                            <constraint firstAttribute="trailing" secondItem="5fW-6K-rIJ" secondAttribute="trailing" constant="8" id="b37-KQ-6MK"/>
-                            <constraint firstItem="5fW-6K-rIJ" firstAttribute="leading" secondItem="rmQ-FJ-jTK" secondAttribute="leading" constant="8" id="goK-pl-HPr"/>
-                        </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="rmQ-FJ-jTK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Laj-1i-JuP"/>
-                <constraint firstAttribute="trailing" secondItem="rmQ-FJ-jTK" secondAttribute="trailing" id="RTB-pG-oIY"/>
-                <constraint firstAttribute="bottom" secondItem="rmQ-FJ-jTK" secondAttribute="bottom" id="kX9-nX-X8i"/>
-                <constraint firstItem="rmQ-FJ-jTK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u7z-Vz-eU6"/>
+                <constraint firstItem="rmQ-FJ-jTK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Gy-Za-DN4"/>
+                <constraint firstAttribute="bottom" secondItem="rmQ-FJ-jTK" secondAttribute="bottom" id="6WM-IY-EnO"/>
+                <constraint firstItem="rmQ-FJ-jTK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IAv-ln-0Qd"/>
+                <constraint firstAttribute="trailing" secondItem="rmQ-FJ-jTK" secondAttribute="trailing" id="urF-xi-wic"/>
             </constraints>
             <size key="customSize" width="131" height="138"/>
             <connections>
                 <outlet property="lblName" destination="5fW-6K-rIJ" id="Ylg-Ic-ERP"/>
+                <outlet property="viewForCVC" destination="rmQ-FJ-jTK" id="0mr-Vo-cVD"/>
             </connections>
             <point key="canvasLocation" x="206.52173913043481" y="174.10714285714286"/>
         </collectionViewCell>

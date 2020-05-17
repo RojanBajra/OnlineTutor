@@ -36,8 +36,21 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCVC", for: indexPath) as! DashboardCollectionViewCell
         
         cell.lblName.text = "rojan"
+        cell.viewForCVC.layer.masksToBounds = true
+        cell.viewForCVC.layer.cornerRadius = 10
+        Design.shareInstance.addDropShadow(view: cell, shadowColor: UIColor.black, opacity: 0.5, shadowOffset: CGSize(width: 2, height: 2), radius: 2)
         
         return cell
     }
+    
 
+}
+
+extension DashboardViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenSize: CGRect = UIScreen.main.bounds
+        return CGSize(width: ((screenSize.width / 2.0) - 16), height: ((screenSize.width / 2.0) - 2))
+    }
+    
 }
