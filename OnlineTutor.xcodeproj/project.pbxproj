@@ -18,6 +18,7 @@
 		24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */; };
 		24ABA2142479954A007C2DAF /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2132479954A007C2DAF /* Pages.swift */; };
 		24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2152479993C007C2DAF /* PagesManager.swift */; };
+		24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */; };
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
@@ -38,6 +39,7 @@
 		24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedViewController.swift; sourceTree = "<group>"; };
 		24ABA2132479954A007C2DAF /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		24ABA2152479993C007C2DAF /* PagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesManager.swift; sourceTree = "<group>"; };
+		24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedARViewController.swift; sourceTree = "<group>"; };
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */,
 				24183D702470642B009D74B6 /* DisplayARViewController.swift */,
 				24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */,
+				24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			files = (
 				24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
+				24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
