@@ -69,7 +69,6 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
 extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("hello")
         return CGSize(width: ((screenSize.width / 2.0) - 16), height: ((screenSize.width / 2.0) - 16))
     }
     
