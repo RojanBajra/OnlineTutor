@@ -18,7 +18,13 @@ class DisplaySelectedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupUI()
+    }
+    
+    func setupUI() {
+        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
+        btnDisplay.backgroundColor = ColorForApp.shareInstance.colorPrimary()
+        btnDisplay.setTitleColor(UIColor.white, for: .normal)
     }
     
     @IBAction func btnDisplay(_ sender: Any) {
