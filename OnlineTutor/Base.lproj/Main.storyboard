@@ -113,17 +113,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa9-oA-68j">
+                                <rect key="frame" x="20" y="823" width="374" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Scan The Card"/>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e5J-rw-pOI">
-                                <rect key="frame" x="20" y="101.33333333333331" width="250" height="300"/>
+                                <rect key="frame" x="82" y="101" width="250" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="35K-m2-7b4"/>
                                     <constraint firstAttribute="height" constant="300" id="4QK-li-zFp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa9-oA-68j">
-                                <rect key="frame" x="20" y="832" width="374" height="30"/>
-                                <state key="normal" title="Scan The Card"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -135,8 +136,8 @@
                             <constraint firstItem="e5J-rw-pOI" firstAttribute="top" secondItem="Ma3-k3-v2x" secondAttribute="bottom" constant="8" id="RUV-IY-mce"/>
                             <constraint firstItem="Ma3-k3-v2x" firstAttribute="trailing" secondItem="25A-WF-enz" secondAttribute="trailing" id="WAD-xd-rj8"/>
                             <constraint firstItem="25A-WF-enz" firstAttribute="top" secondItem="7cY-dR-LGc" secondAttribute="top" id="f7f-V4-8HG"/>
+                            <constraint firstItem="e5J-rw-pOI" firstAttribute="centerX" secondItem="7cY-dR-LGc" secondAttribute="centerX" id="m5C-Tj-BCj"/>
                             <constraint firstItem="7cY-dR-LGc" firstAttribute="trailing" secondItem="Sa9-oA-68j" secondAttribute="trailing" constant="20" id="psT-VU-dDE"/>
-                            <constraint firstItem="e5J-rw-pOI" firstAttribute="leading" secondItem="Ma3-k3-v2x" secondAttribute="leading" id="vSA-dZ-xgA"/>
                             <constraint firstItem="7cY-dR-LGc" firstAttribute="trailing" secondItem="25A-WF-enz" secondAttribute="trailing" constant="20" id="wHv-L8-xMI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7cY-dR-LGc"/>
