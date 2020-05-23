@@ -16,6 +16,7 @@
 		24183D762470642C009D74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D752470642C009D74B6 /* Assets.xcassets */; };
 		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
 		24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */; };
+		24ABA2142479954A007C2DAF /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2132479954A007C2DAF /* Pages.swift */; };
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
@@ -34,6 +35,7 @@
 		24183D782470642C009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedViewController.swift; sourceTree = "<group>"; };
+		24ABA2132479954A007C2DAF /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		24183D6B2470642B009D74B6 /* OnlineTutor */ = {
 			isa = PBXGroup;
 			children = (
+				24ABA21224799378007C2DAF /* Model */,
 				24125FB824791BA600F4E544 /* resources */,
 				24CCB5182471AFBE00DF435B /* utils */,
 				24CCB51324716F7D00DF435B /* xibCell */,
@@ -90,6 +93,14 @@
 				24183D7A2470642C009D74B6 /* Info.plist */,
 			);
 			path = OnlineTutor;
+			sourceTree = "<group>";
+		};
+		24ABA21224799378007C2DAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24ABA2132479954A007C2DAF /* Pages.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		24CCB51024716DBB00DF435B /* ViewController */ = {
@@ -199,6 +210,7 @@
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
+				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
 				24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */,
 			);
