@@ -64,6 +64,11 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController
+        self.navigationController?.pushViewController(vc, animated: false)
+    }
 }
 
 extension DashboardViewController: UICollectionViewDelegateFlowLayout {
