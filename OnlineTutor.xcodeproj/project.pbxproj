@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FB924791BF500F4E544 /* ColorForApp.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
 		24183D6F2470642B009D74B6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D6E2470642B009D74B6 /* art.scnassets */; };
 		24183D712470642B009D74B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* ViewController.swift */; };
@@ -16,9 +17,11 @@
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
+		24CCB51A2471AFCF00DF435B /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB5192471AFCF00DF435B /* Design.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24125FB924791BF500F4E544 /* ColorForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForApp.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24183D6C2470642B009D74B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24183D6E2470642B009D74B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
+		24CCB5192471AFCF00DF435B /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24125FB824791BA600F4E544 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				24125FB924791BF500F4E544 /* ColorForApp.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		24183D602470642A009D74B6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +74,8 @@
 		24183D6B2470642B009D74B6 /* OnlineTutor */ = {
 			isa = PBXGroup;
 			children = (
+				24125FB824791BA600F4E544 /* resources */,
+				24CCB5182471AFBE00DF435B /* utils */,
 				24CCB51324716F7D00DF435B /* xibCell */,
 				24CCB51024716DBB00DF435B /* ViewController */,
 				24183D6C2470642B009D74B6 /* AppDelegate.swift */,
@@ -90,6 +104,14 @@
 				24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */,
 			);
 			path = xibCell;
+			sourceTree = "<group>";
+		};
+		24CCB5182471AFBE00DF435B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				24CCB5192471AFCF00DF435B /* Design.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +191,8 @@
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
+				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
+				24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
