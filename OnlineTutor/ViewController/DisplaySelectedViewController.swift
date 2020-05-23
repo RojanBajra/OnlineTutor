@@ -29,6 +29,8 @@ class DisplaySelectedViewController: UIViewController {
     }
     
     @IBAction func btnDisplay(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func btnHowItWorks(_ sender: Any) {

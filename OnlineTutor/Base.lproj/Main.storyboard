@@ -93,6 +93,35 @@
             </objects>
             <point key="canvasLocation" x="1955.072463768116" y="129.91071428571428"/>
         </scene>
+        <!--Display SelectedAR View Controller-->
+        <scene sceneID="2gQ-Cs-0cS">
+            <objects>
+                <viewController storyboardIdentifier="DisplaySelectedARVC" id="ctL-nU-glo" customClass="DisplaySelectedARViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sao-WH-Z9z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HgS-Mb-sGT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VYQ-zS-KXk" firstAttribute="top" secondItem="HgS-Mb-sGT" secondAttribute="top" constant="44" id="AaG-ew-lSw"/>
+                            <constraint firstItem="VYQ-zS-KXk" firstAttribute="bottom" secondItem="HgS-Mb-sGT" secondAttribute="bottom" id="SgH-Ch-kOD"/>
+                            <constraint firstItem="VYQ-zS-KXk" firstAttribute="trailing" secondItem="HgS-Mb-sGT" secondAttribute="trailing" id="UW6-cW-V0H"/>
+                            <constraint firstItem="HgS-Mb-sGT" firstAttribute="leading" secondItem="VYQ-zS-KXk" secondAttribute="leading" id="Yic-w5-Itw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VYQ-zS-KXk"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="HgS-Mb-sGT" id="B1l-us-HUR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCU-G3-B7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004.3478260869566" y="874.55357142857144"/>
+        </scene>
         <!--Display Selected View Controller-->
         <scene sceneID="nt3-oN-b8x">
             <objects>
