@@ -13,8 +13,9 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
 //    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var textTotDisplay = ["Cards", "Numbers & Letters", "Plants & Animals", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
-    var iconsToDisplay = ["icon_flashCard", "icon_alphabet", "icon_plantsAndAnimals", "icon_maths", "icon_doodle", "icon_solarSystem", "icon_test"]
+//    var textTotDisplay = ["Cards", "Numbers & Letters", "Plants & Animals", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
+//    var iconsToDisplay = ["icon_flashCard", "icon_alphabet", "icon_plantsAndAnimals", "icon_maths", "icon_doodle", "icon_solarSystem", "icon_test"]
+    var pageData: [Pages] = []
     
     let screenSize: CGRect = UIScreen.main.bounds
     
@@ -22,7 +23,55 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        instantiatePages()
         
+    }
+    
+    func instantiatePages() {
+        pageData = [
+            Pages(
+                pageName: "Cards",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_flashCard"
+            ),
+            Pages(
+                pageName: "Numbers & Letters",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplaySelectedVC") as! DisplaySelectedViewController,
+                pageID: "DisplaySelectedVC",
+                pageIcon: "icon_alphabet"
+            ),
+            Pages(
+                pageName: "Plants & Animals",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_plantsAndAnimals"
+            ),
+            Pages(
+                pageName: "Mathematics",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_maths"
+            ),
+            Pages(
+                pageName: "Draw Numbers",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_doodle"
+            ),
+            Pages(
+                pageName: "Solar System",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_solarSystem"
+            ),
+            Pages(
+                pageName: "Test Yourself",
+                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageID: "DisplayCardVC",
+                pageIcon: "icon_test"
+            )
+        ]
     }
     
     func setupUI() {
@@ -39,13 +88,13 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return textTotDisplay.count
+        return pageData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCVC", for: indexPath) as! DashboardCollectionViewCell
         
-        cell.lblName.text = textTotDisplay[indexPath.row]
+        cell.lblName.text = self.pageData[indexPath.row].pageName
         cell.lblName.textColor = ColorForApp.shareInstance.colorPrimary()
 //        cell.lblName.textColor = UIColor.black
         cell.lblName.font = UIFont.boldSystemFont(ofSize: 24.0)
@@ -58,7 +107,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.viewForCVC.backgroundColor = UIColor.white
 //        cell.viewForCVC.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         
-        cell.imgIcon.image = UIImage.init(named: iconsToDisplay[indexPath.row])
+        cell.imgIcon.image = UIImage.init(named: self.pageData[indexPath.row].pageIcon)
         
         Design.shareInstance.addDropShadow(view: cell, shadowColor: UIColor.black, opacity: 0.5, shadowOffset: CGSize(width: 2, height: 2), radius: 2)
         

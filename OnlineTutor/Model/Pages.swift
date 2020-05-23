@@ -13,5 +13,7 @@ struct Pages {
     
     var pageName: String
     var pageViewController: UIViewController
+    var pageID: String
+    var pageIcon: String
 
 }
