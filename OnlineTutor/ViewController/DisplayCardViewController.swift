@@ -36,7 +36,7 @@ class DisplayCardViewController: UIViewController {
     }
 
     @IBAction func btnScan(_ sender: Any) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "VC") as! ViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplayARVC") as! DisplayARViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
