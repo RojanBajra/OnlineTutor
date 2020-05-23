@@ -45,15 +45,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-s5-cib">
-                                <rect key="frame" x="20" y="44" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7re-Uw-EjK">
-                                <rect key="frame" x="0.0" y="73" width="414" height="789"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_maths" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-Ye-rK3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qso-pE-N2b"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7re-Uw-EjK">
+                                <rect key="frame" x="0.0" y="281" width="414" height="581"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EBI-Cs-ZK7">
                                     <size key="itemSize" width="50" height="50"/>
@@ -72,12 +71,25 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-s5-cib">
+                                <rect key="frame" x="20" y="252" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HQy-s5-cib" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" constant="20" id="Tit-tV-MMX"/>
-                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="HQy-s5-cib" secondAttribute="trailing" constant="20" id="cfs-Qk-Nbl"/>
-                            <constraint firstItem="HQy-s5-cib" firstAttribute="top" secondItem="ePk-ph-miH" secondAttribute="top" id="qwJ-o6-bhT"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="HQy-s5-cib" secondAttribute="trailing" constant="20" id="9W5-a1-mSi"/>
+                            <constraint firstItem="HQy-s5-cib" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" constant="20" id="K2h-w1-p7g"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="9Se-Ye-rK3" secondAttribute="trailing" id="QF7-84-tRP"/>
+                            <constraint firstItem="9Se-Ye-rK3" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" id="QHb-4U-FQT"/>
+                            <constraint firstItem="7re-Uw-EjK" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" id="RoS-oB-kzC"/>
+                            <constraint firstItem="7re-Uw-EjK" firstAttribute="top" secondItem="HQy-s5-cib" secondAttribute="bottom" constant="8" id="US4-uk-2Cj"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="7re-Uw-EjK" secondAttribute="trailing" id="gHk-jt-1g9"/>
+                            <constraint firstItem="HQy-s5-cib" firstAttribute="top" secondItem="9Se-Ye-rK3" secondAttribute="bottom" constant="8" id="j6p-W8-CwX"/>
+                            <constraint firstItem="9Se-Ye-rK3" firstAttribute="top" secondItem="ePk-ph-miH" secondAttribute="top" id="tGt-l8-GeD"/>
+                            <constraint firstItem="ePk-ph-miH" firstAttribute="bottom" secondItem="7re-Uw-EjK" secondAttribute="bottom" id="zxj-mY-Slu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ePk-ph-miH"/>
                     </view>
@@ -91,4 +103,7 @@
             <point key="canvasLocation" x="1044.9275362318842" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_maths" width="100" height="100"/>
+    </resources>
 </document>

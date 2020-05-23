@@ -30,8 +30,8 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        
-        lblTitle.font = UIFont.boldSystemFont(ofSize: 24.0)
+        lblTitle.textColor = ColorForApp.shareInstance.colorPrimary()
+        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
