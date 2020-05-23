@@ -17,6 +17,9 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
+        
         setupUI()
         instantiatePages()
         
@@ -70,6 +73,20 @@ extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: ((screenSize.width / 2.0) - 16), height: ((screenSize.width / 2.0) - 16))
+    }
+    
+}
+
+extension UIViewController {
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
 }
