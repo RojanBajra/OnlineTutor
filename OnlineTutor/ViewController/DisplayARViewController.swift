@@ -81,4 +81,6 @@ class DisplayARViewController: UIViewController, ARSCNViewDelegate {
             , y: planeNode.position.y, z: planeNode.position.z)
         return textNode
     }
+    
+    
 }

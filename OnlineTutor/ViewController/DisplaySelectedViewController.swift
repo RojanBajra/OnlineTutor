@@ -30,6 +30,7 @@ class DisplaySelectedViewController: UIViewController {
     
     @IBAction func btnDisplay(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        vc.nameToDisplay = txtCharacter.text!
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
