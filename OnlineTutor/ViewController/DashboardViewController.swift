@@ -10,7 +10,7 @@ import UIKit
 
 class DashboardViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var lblTitle: UILabel!
+//    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var textTotDisplay = ["Cards", "Numbers & Letters", "Plants & Animals", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
@@ -26,12 +26,16 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func setupUI() {
+        
+        navigationController?.navigationBar.barTintColor = ColorForApp.shareInstance.colorPrimary()
+        navigationItem.title = "Online Tutor"
+        
         self.collectionView.register(UINib(nibName: "DashboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DashboardCollectionViewCell.identifier)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         
-        lblTitle.textColor = ColorForApp.shareInstance.colorPrimary()
-        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
+//        lblTitle.textColor = ColorForApp.shareInstance.colorPrimary()
+//        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,13 +47,16 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         
         cell.lblName.text = textTotDisplay[indexPath.row]
         cell.lblName.textColor = ColorForApp.shareInstance.colorPrimary()
+//        cell.lblName.textColor = UIColor.black
         cell.lblName.font = UIFont.boldSystemFont(ofSize: 24.0)
         
         cell.viewForCVC.layer.masksToBounds = true
         cell.viewForCVC.layer.cornerRadius = 10
         cell.viewForCVC.layer.borderWidth = 3
+//        cell.viewForCVC.layer.borderColor = UIColor.black.cgColor
         cell.viewForCVC.layer.borderColor = ColorForApp.shareInstance.colorPrimary().cgColor
         cell.viewForCVC.backgroundColor = UIColor.white
+//        cell.viewForCVC.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         
         cell.imgIcon.image = UIImage.init(named: iconsToDisplay[indexPath.row])
         

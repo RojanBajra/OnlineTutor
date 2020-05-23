@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eH2-b0-WG9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OZV-xA-c4L">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -45,14 +45,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_maths" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-Ye-rK3">
-                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="New Project" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-Ye-rK3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="qso-pE-N2b"/>
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7re-Uw-EjK">
-                                <rect key="frame" x="0.0" y="281" width="414" height="581"/>
+                                <rect key="frame" x="0.0" y="296" width="414" height="566"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EBI-Cs-ZK7">
                                     <size key="itemSize" width="50" height="50"/>
@@ -71,39 +71,48 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Tutor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-s5-cib">
-                                <rect key="frame" x="20" y="252" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="HQy-s5-cib" secondAttribute="trailing" constant="20" id="9W5-a1-mSi"/>
-                            <constraint firstItem="HQy-s5-cib" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" constant="20" id="K2h-w1-p7g"/>
+                            <constraint firstItem="7re-Uw-EjK" firstAttribute="top" secondItem="9Se-Ye-rK3" secondAttribute="bottom" constant="8" id="94H-oo-hY8"/>
                             <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="9Se-Ye-rK3" secondAttribute="trailing" id="QF7-84-tRP"/>
                             <constraint firstItem="9Se-Ye-rK3" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" id="QHb-4U-FQT"/>
                             <constraint firstItem="7re-Uw-EjK" firstAttribute="leading" secondItem="ePk-ph-miH" secondAttribute="leading" id="RoS-oB-kzC"/>
-                            <constraint firstItem="7re-Uw-EjK" firstAttribute="top" secondItem="HQy-s5-cib" secondAttribute="bottom" constant="8" id="US4-uk-2Cj"/>
                             <constraint firstItem="ePk-ph-miH" firstAttribute="trailing" secondItem="7re-Uw-EjK" secondAttribute="trailing" id="gHk-jt-1g9"/>
-                            <constraint firstItem="HQy-s5-cib" firstAttribute="top" secondItem="9Se-Ye-rK3" secondAttribute="bottom" constant="8" id="j6p-W8-CwX"/>
                             <constraint firstItem="9Se-Ye-rK3" firstAttribute="top" secondItem="ePk-ph-miH" secondAttribute="top" id="tGt-l8-GeD"/>
                             <constraint firstItem="ePk-ph-miH" firstAttribute="bottom" secondItem="7re-Uw-EjK" secondAttribute="bottom" id="zxj-mY-Slu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ePk-ph-miH"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PUc-RO-sSG"/>
                     <connections>
                         <outlet property="collectionView" destination="7re-Uw-EjK" id="Jch-Ax-Ltr"/>
-                        <outlet property="lblTitle" destination="HQy-s5-cib" id="CaQ-1A-LRl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgy-oO-ndO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1955.072463768116" y="129.91071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="w2D-Ze-fhN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OZV-xA-c4L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5dl-eD-mlM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eH2-b0-WG9" kind="relationship" relationship="rootViewController" id="m3Y-wB-XhX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dq3-zZ-kvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1044.9275362318842" y="129.91071428571428"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon_maths" width="100" height="100"/>
+        <image name="New Project" width="270" height="152"/>
     </resources>
 </document>
