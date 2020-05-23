@@ -12,7 +12,11 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    var dataToDisplay = ["Cards", "Numbers & Letters", "Animals & Plants", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
+    
+    var textTotDisplay = ["Cards", "Numbers & Letters", "Plants & Animals", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
+    var iconsToDisplay = ["icon_flashCard", "icon_alphabet", "icon_plantsAndAnimals", "icon_maths", "icon_doodle", "icon_solarSystem", "icon_test"]
+    
+    let screenSize: CGRect = UIScreen.main.bounds
     
     
     override func viewDidLoad() {
@@ -31,13 +35,13 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataToDisplay.count
+        return textTotDisplay.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCVC", for: indexPath) as! DashboardCollectionViewCell
         
-        cell.lblName.text = dataToDisplay[indexPath.row]
+        cell.lblName.text = textTotDisplay[indexPath.row]
         cell.lblName.textColor = ColorForApp.shareInstance.colorPrimary()
         cell.lblName.font = UIFont.boldSystemFont(ofSize: 24.0)
         
@@ -46,6 +50,8 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.viewForCVC.layer.borderWidth = 3
         cell.viewForCVC.layer.borderColor = ColorForApp.shareInstance.colorPrimary().cgColor
         cell.viewForCVC.backgroundColor = UIColor.white
+        
+        cell.imgIcon.image = UIImage.init(named: iconsToDisplay[indexPath.row])
         
         Design.shareInstance.addDropShadow(view: cell, shadowColor: UIColor.black, opacity: 0.5, shadowOffset: CGSize(width: 2, height: 2), radius: 2)
         
@@ -56,8 +62,8 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
 extension DashboardViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let screenSize: CGRect = UIScreen.main.bounds
-        return CGSize(width: ((screenSize.width / 2.0) - 16), height: ((screenSize.width / 2.0) - 2))
+        
+        return CGSize(width: ((screenSize.width / 2.0) - 16), height: ((screenSize.width / 2.0) - 16))
     }
     
 }

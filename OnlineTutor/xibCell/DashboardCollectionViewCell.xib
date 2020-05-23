@@ -19,18 +19,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="307" height="323"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-6K-rIJ">
-                                <rect key="frame" x="8" y="8" width="291" height="307"/>
+                                <rect key="frame" x="8" y="279" width="291" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jkI-9N-pRd">
+                                <rect key="frame" x="116" y="36" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="WZD-6r-E8H"/>
+                                    <constraint firstAttribute="height" constant="75" id="YVX-Oe-Ead"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.8666666666666667" green="0.50588235294117645" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="5fW-6K-rIJ" secondAttribute="bottom" constant="8" id="E42-Vp-idp"/>
-                            <constraint firstItem="5fW-6K-rIJ" firstAttribute="leading" secondItem="rmQ-FJ-jTK" secondAttribute="leading" constant="8" id="Ply-qb-NjA"/>
-                            <constraint firstItem="5fW-6K-rIJ" firstAttribute="top" secondItem="rmQ-FJ-jTK" secondAttribute="top" constant="8" id="nk0-v4-ZrS"/>
-                            <constraint firstAttribute="trailing" secondItem="5fW-6K-rIJ" secondAttribute="trailing" constant="8" id="thW-Q8-Gwc"/>
+                            <constraint firstAttribute="trailing" secondItem="5fW-6K-rIJ" secondAttribute="trailing" constant="8" id="99Z-lK-HAt"/>
+                            <constraint firstItem="jkI-9N-pRd" firstAttribute="top" secondItem="rmQ-FJ-jTK" secondAttribute="top" constant="36" id="Gbu-3I-Kk9"/>
+                            <constraint firstItem="jkI-9N-pRd" firstAttribute="centerX" secondItem="rmQ-FJ-jTK" secondAttribute="centerX" id="KJh-qw-Euh"/>
+                            <constraint firstAttribute="bottom" secondItem="5fW-6K-rIJ" secondAttribute="bottom" constant="8" id="hn8-Kh-kYb"/>
+                            <constraint firstItem="5fW-6K-rIJ" firstAttribute="leading" secondItem="rmQ-FJ-jTK" secondAttribute="leading" constant="8" id="kB6-N6-YG0"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -43,6 +51,7 @@
             </constraints>
             <size key="customSize" width="307" height="323"/>
             <connections>
+                <outlet property="imgIcon" destination="jkI-9N-pRd" id="S1t-ry-0ij"/>
                 <outlet property="lblName" destination="5fW-6K-rIJ" id="Ylg-Ic-ERP"/>
                 <outlet property="viewForCVC" destination="rmQ-FJ-jTK" id="0mr-Vo-cVD"/>
             </connections>

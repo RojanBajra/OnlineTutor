@@ -13,6 +13,7 @@ class DashboardCollectionViewCell: UICollectionViewCell {
     static var identifier = "DashboardCVC"
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var viewForCVC: UIView!
+    @IBOutlet weak var imgIcon: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
