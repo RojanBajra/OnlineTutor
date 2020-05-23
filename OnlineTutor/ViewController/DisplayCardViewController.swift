@@ -35,4 +35,8 @@ class DisplayCardViewController: UIViewController {
         btnScan.layer.cornerRadius = 10
     }
 
+    @IBAction func btnScan(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "VC") as! ViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

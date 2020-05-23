@@ -82,7 +82,6 @@
 				24CCB51024716DBB00DF435B /* ViewController */,
 				24183D6C2470642B009D74B6 /* AppDelegate.swift */,
 				24183D6E2470642B009D74B6 /* art.scnassets */,
-				24183D702470642B009D74B6 /* ViewController.swift */,
 				24183D722470642B009D74B6 /* Main.storyboard */,
 				24183D752470642C009D74B6 /* Assets.xcassets */,
 				24183D772470642C009D74B6 /* LaunchScreen.storyboard */,
@@ -96,6 +95,7 @@
 			children = (
 				24CCB51124716DDE00DF435B /* DashboardViewController.swift */,
 				24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */,
+				24183D702470642B009D74B6 /* ViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
