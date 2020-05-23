@@ -28,6 +28,11 @@ class DisplayCardViewController: UIViewController {
         btnScan.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         btnScan.setTitleColor(UIColor.white, for: .normal)
         
+        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
+        imgCard.layer.borderWidth = 3
+        imgCard.layer.borderColor = UIColor.black.cgColor
+        imgCard.layer.cornerRadius = 20
+        btnScan.layer.cornerRadius = 10
     }
 
 }
