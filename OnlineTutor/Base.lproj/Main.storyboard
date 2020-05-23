@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1955.072463768116" y="129.91071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Selected View Controller-->
         <scene sceneID="nt3-oN-b8x">
             <objects>
-                <viewController id="7Kb-6K-ZKw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplaySelectedVC" id="7Kb-6K-ZKw" customClass="DisplaySelectedViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="13W-69-utE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,6 +121,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-S2-5RF">
                                 <rect key="frame" x="20" y="145" width="374" height="30"/>
                                 <state key="normal" title="Display"/>
+                                <connections>
+                                    <action selector="btnDisplay:" destination="7Kb-6K-ZKw" eventType="touchUpInside" id="uh0-nk-6ra"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjX-9O-Ktv">
                                 <rect key="frame" x="284" y="183" width="110" height="30"/>
@@ -128,6 +131,9 @@
                                     <constraint firstAttribute="width" constant="110" id="b2E-xf-U3M"/>
                                 </constraints>
                                 <state key="normal" title="How it works?"/>
+                                <connections>
+                                    <action selector="btnHowItWorks:" destination="7Kb-6K-ZKw" eventType="touchUpInside" id="nH6-Pc-9U5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -149,6 +155,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0P0-CV-S7s"/>
                     </view>
+                    <connections>
+                        <outlet property="btnDisplay" destination="2dc-S2-5RF" id="Oc0-eu-thW"/>
+                        <outlet property="btnHowItWorks" destination="mjX-9O-Ktv" id="ECF-Tj-BAl"/>
+                        <outlet property="lblCharacter" destination="A4B-nZ-DyP" id="WVR-Qm-eaC"/>
+                        <outlet property="lblTitle" destination="icj-YZ-qfG" id="NFS-8V-VMl"/>
+                        <outlet property="txtCharacter" destination="6vH-CB-KE2" id="997-bc-3O9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6l-m4-7bA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
