@@ -12,13 +12,8 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
 //    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-    
-//    var textTotDisplay = ["Cards", "Numbers & Letters", "Plants & Animals", "Mathematics", "Draw Numbers", "Solar System", "Test Yourself"]
-//    var iconsToDisplay = ["icon_flashCard", "icon_alphabet", "icon_plantsAndAnimals", "icon_maths", "icon_doodle", "icon_solarSystem", "icon_test"]
-    var pageData: [Pages] = []
-    
+    var pageValue: PagesManager = PagesManager()
     let screenSize: CGRect = UIScreen.main.bounds
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,50 +23,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func instantiatePages() {
-        pageData = [
-            Pages(
-                pageName: "Cards",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_flashCard"
-            ),
-            Pages(
-                pageName: "Numbers & Letters",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplaySelectedVC") as! DisplaySelectedViewController,
-                pageID: "DisplaySelectedVC",
-                pageIcon: "icon_alphabet"
-            ),
-            Pages(
-                pageName: "Plants & Animals",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_plantsAndAnimals"
-            ),
-            Pages(
-                pageName: "Mathematics",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_maths"
-            ),
-            Pages(
-                pageName: "Draw Numbers",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_doodle"
-            ),
-            Pages(
-                pageName: "Solar System",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_solarSystem"
-            ),
-            Pages(
-                pageName: "Test Yourself",
-                pageViewController: self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_test"
-            )
-        ]
+        pageValue = PagesManager(storyboard: self.storyboard!)
     }
     
     func setupUI() {
@@ -82,19 +34,16 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         self.collectionView.register(UINib(nibName: "DashboardCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: DashboardCollectionViewCell.identifier)
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-        
-//        lblTitle.textColor = ColorForApp.shareInstance.colorPrimary()
-//        lblTitle.font = UIFont.boldSystemFont(ofSize: 30.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pageData.count
+        return pageValue.getPagesCount()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DashboardCVC", for: indexPath) as! DashboardCollectionViewCell
         
-        cell.lblName.text = self.pageData[indexPath.row].pageName
+        cell.lblName.text = self.pageValue.getPageName(dataNumber: indexPath.row)
         cell.lblName.textColor = ColorForApp.shareInstance.colorPrimary()
 //        cell.lblName.textColor = UIColor.black
         cell.lblName.font = UIFont.boldSystemFont(ofSize: 24.0)
@@ -107,7 +56,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         cell.viewForCVC.backgroundColor = UIColor.white
 //        cell.viewForCVC.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         
-        cell.imgIcon.image = UIImage.init(named: self.pageData[indexPath.row].pageIcon)
+        cell.imgIcon.image = UIImage.init(named: self.pageValue.getPageIcon(dataNumber: indexPath.row))
         
         Design.shareInstance.addDropShadow(view: cell, shadowColor: UIColor.black, opacity: 0.5, shadowOffset: CGSize(width: 2, height: 2), radius: 2)
         
@@ -115,7 +64,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController
+        let vc = self.pageValue.getPageViewController(dataNumber: indexPath.row)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
