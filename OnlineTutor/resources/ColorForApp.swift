@@ -18,4 +18,9 @@ class ColorForApp: NSObject{
 //        return UIColor.init(red: 90 / 255.0, green: 59 / 255.0, blue: 157 / 255.0, alpha: 1.0)
         return UIColor.init(red: 211 / 255.0, green: 129 / 255.0, blue: 47 / 255.0, alpha: 1.0)
     }
+    
+    func colorPrimaryHalfAlpha() -> UIColor {
+//        return UIColor.init(red: 90 / 255.0, green: 59 / 255.0, blue: 157 / 255.0, alpha: 1.0)
+        return UIColor.init(red: 211 / 255.0, green: 129 / 255.0, blue: 47 / 255.0, alpha: 0.5)
+    }
 }
