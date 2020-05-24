@@ -29,6 +29,7 @@ class AnimalViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         super.viewDidLoad()
         setupUI()
         pickerViewPart()
+        addTapGestureForPickerViewCancellation()
 
     }
     
@@ -46,12 +47,23 @@ class AnimalViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorColor = UIColor.clear
+        tableView.allowsSelection = false
+    }
+    
+    func addTapGestureForPickerViewCancellation() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hidePickerView))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func hidePickerView() {
+        picker.removeFromSuperview()
     }
     
     func pickerViewPart() {
         picker = UIPickerView.init()
         picker.delegate = self
-        picker.backgroundColor = ColorForApp.shareInstance.colorPrimaryHalfAlpha()
+        picker.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         picker.setValue(UIColor.black, forKey: "textColor")
         picker.autoresizingMask = .flexibleWidth
         picker.contentMode = .center
@@ -101,10 +113,21 @@ extension AnimalViewController: UITableViewDelegate, UITableViewDataSource{
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalTitleTVC") as! AnimalTitleTableViewCell
+            
             cell.lblTitle.text = txtAnimal.text
             cell.imgAnimal.image = UIImage.init(named: animal.getImageName(dataPart: pickedAnimalNumber))
             
             cell.lblTitle.font = UIFont.boldSystemFont(ofSize: 26.0)
+            
+            Design.shareInstance.addDropShadow(view: cell.viewImage, shadowColor: UIColor.black, opacity: 0.8, shadowOffset: CGSize(width: 1, height: 1), radius: 7.5)
+
+            cell.imgAnimal.clipsToBounds = true
+            cell.imgAnimal.layer.cornerRadius = cell.imgAnimal.frame.width / 2.0
+            
+            cell.viewImage.layer.cornerRadius = cell.imgAnimal.frame.width / 2.0
+            
+            
+            
             return cell
             
         }else{

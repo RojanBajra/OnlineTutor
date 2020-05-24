@@ -22,7 +22,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-sY-rC7">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMD-rA-Y3x">
+                        <rect key="frame" x="72.5" y="49" width="175" height="175"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Y0-sY-rC7">
                         <rect key="frame" x="72.5" y="49" width="175" height="175"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="175" id="g1W-Kh-Eh8"/>
@@ -32,7 +36,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="tMa-8Y-WK2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0sE-r8-oTb"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="bottom" secondItem="4Y0-sY-rC7" secondAttribute="bottom" id="H2L-1x-F4b"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="leading" secondItem="4Y0-sY-rC7" secondAttribute="leading" id="RnJ-JQ-4ZD"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="centerX" secondItem="4Y0-sY-rC7" secondAttribute="centerX" id="Tvh-KI-GZS"/>
                     <constraint firstItem="tMa-8Y-WK2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="XXC-Au-kDE"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="trailing" secondItem="4Y0-sY-rC7" secondAttribute="trailing" id="cSv-8k-35T"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="top" secondItem="tMa-8Y-WK2" secondAttribute="bottom" constant="8" id="eEn-PS-fuH"/>
+                    <constraint firstItem="YMD-rA-Y3x" firstAttribute="top" secondItem="4Y0-sY-rC7" secondAttribute="top" id="g5Q-zH-rXV"/>
                     <constraint firstItem="4Y0-sY-rC7" firstAttribute="top" secondItem="tMa-8Y-WK2" secondAttribute="bottom" constant="8" id="nXM-GU-ZB8"/>
                     <constraint firstItem="4Y0-sY-rC7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="opr-8D-FMT"/>
                     <constraint firstAttribute="trailing" secondItem="tMa-8Y-WK2" secondAttribute="trailing" constant="16" id="r9X-A0-UTH"/>
@@ -43,6 +53,7 @@
             <connections>
                 <outlet property="imgAnimal" destination="4Y0-sY-rC7" id="f3Y-qB-c61"/>
                 <outlet property="lblTitle" destination="tMa-8Y-WK2" id="9sg-6L-KrS"/>
+                <outlet property="viewImage" destination="YMD-rA-Y3x" id="y9L-rW-UM4"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="168.08035714285714"/>
         </tableViewCell>
