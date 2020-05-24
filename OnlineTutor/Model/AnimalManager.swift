@@ -117,4 +117,27 @@ struct AnimalManager {
         return listOfAnimals[animalNumber].commonName
     }
     
+    func getAnimalData(indexPart: Int, dataPart: Int) -> String {
+        if indexPart == 1 {
+            return listOfAnimals[dataPart].commonName
+        }else if indexPart == 2 {
+            return listOfAnimals[dataPart].classificationClass
+        }else if indexPart == 3 {
+            return listOfAnimals[dataPart].phylum
+        }else if indexPart == 4 {
+            return listOfAnimals[dataPart].scientificName
+        }else if indexPart == 5 {
+            return listOfAnimals[dataPart].lifeSpan
+        }else if indexPart == 6 {
+            return listOfAnimals[dataPart].description
+        }
+        return ""
+    }
+    
+    func getConcatinatedInformation(dataPart: Int) -> String {
+        var data = listOfAnimals[dataPart].commonName + "\nClass: " + listOfAnimals[dataPart].classificationClass + "\nPhylum: " + listOfAnimals[dataPart].phylum + "\nScientific Name: " + listOfAnimals[dataPart].scientificName + "\nLifespan: " + listOfAnimals[dataPart].lifeSpan
+        
+        return data
+        
+    }
 }

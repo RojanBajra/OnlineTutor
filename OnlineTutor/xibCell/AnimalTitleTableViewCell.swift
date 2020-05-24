@@ -10,6 +10,10 @@ import UIKit
 
 class AnimalTitleTableViewCell: UITableViewCell {
 
+    static var identifier = "AnimalTitleTVC"
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var imgAnimal: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

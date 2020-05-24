@@ -12,6 +12,8 @@
 		240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */; };
 		240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */; };
 		240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A6552247AFB530084CB31 /* AnimalViewController.swift */; };
+		240A6556247B05370084CB31 /* AnimalTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A6554247B05370084CB31 /* AnimalTitleTableViewCell.swift */; };
+		240A6557247B05370084CB31 /* AnimalTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */; };
 		24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FB924791BF500F4E544 /* ColorForApp.swift */; };
 		24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
@@ -36,6 +38,8 @@
 		240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTableViewCell.xib; sourceTree = "<group>"; };
 		240A6552247AFB530084CB31 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		240A6554247B05370084CB31 /* AnimalTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTitleTableViewCell.swift; sourceTree = "<group>"; };
+		240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTitleTableViewCell.xib; sourceTree = "<group>"; };
 		24125FB924791BF500F4E544 /* ColorForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForApp.swift; sourceTree = "<group>"; };
 		24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCardViewController.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +144,8 @@
 				24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */,
 				240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */,
 				240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */,
+				240A6554247B05370084CB31 /* AnimalTitleTableViewCell.swift */,
+				240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -216,6 +222,7 @@
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
 				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
 				240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */,
+				240A6557247B05370084CB31 /* AnimalTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				240A6556247B05370084CB31 /* AnimalTitleTableViewCell.swift in Sources */,
 				24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */,
 				240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,

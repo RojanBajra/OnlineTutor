@@ -10,6 +10,7 @@ import UIKit
 
 class AnimalTableViewCell: UITableViewCell {
 
+    static var identifier = "AnimalTVC"
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
     
