@@ -109,6 +109,12 @@ struct AnimalManager {
         ),
     ]
     
+    func getTotalAnimal() -> Int {
+        return listOfAnimals.count
+    }
     
+    func getAnimalName(animalNumber: Int) -> String {
+        return listOfAnimals[animalNumber].commonName
+    }
     
 }
