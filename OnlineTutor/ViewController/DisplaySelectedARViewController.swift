@@ -49,7 +49,7 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARPositionalTrackingConfiguration()
+        let configuration = ARWorldTrackingConfiguration()
 
         // Run the view's session
         sceneView.session.run(configuration)
