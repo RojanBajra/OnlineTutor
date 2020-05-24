@@ -31,10 +31,10 @@ struct PagesManager {
                 pageIcon: "icon_alphabet"
             ),
             Pages(
-                pageName: "Plants & Animals",
+                pageName: "Animals",
                 pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
                 pageID: "DisplayCardVC",
-                pageIcon: "icon_plantsAndAnimals"
+                pageIcon: "icon_animal"
             ),
             Pages(
                 pageName: "Mathematics",
