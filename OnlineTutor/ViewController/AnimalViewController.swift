@@ -102,7 +102,7 @@ extension AnimalViewController: UITableViewDelegate, UITableViewDataSource{
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AnimalTitleTVC") as! AnimalTitleTableViewCell
             cell.lblTitle.text = txtAnimal.text
-            cell.imgAnimal.image = UIImage.init(named: "New Project")
+            cell.imgAnimal.image = UIImage.init(named: animal.getImageName(dataPart: pickedAnimalNumber))
             
             cell.lblTitle.font = UIFont.boldSystemFont(ofSize: 26.0)
             return cell

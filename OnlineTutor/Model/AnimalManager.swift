@@ -49,7 +49,7 @@ struct AnimalManager {
             phylum: "Chordata",
             scientificName: "Equus caballus",
             lifeSpan: "25 – 30 years",
-            description: "Horses are ungulates — mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads. Due to domestication, they are found all over the world. Horses have lived on Earth for more than 50 million years, according the American Museum of Natural History."
+            description: "Horses are ungulates mammals with hooves. They also have long tails, short hair, muscular torsos, long thick necks and elongated heads. Due to domestication, they are found all over the world. Horses have lived on Earth for more than 50 million years, according the American Museum of Natural History."
         ),
         Animal(
             commonName: "Moose",
@@ -139,5 +139,9 @@ struct AnimalManager {
         
         return data
         
+    }
+    
+    func getImageName(dataPart: Int) -> String {
+        return listOfAnimals[dataPart].commonName.lowercased()
     }
 }
