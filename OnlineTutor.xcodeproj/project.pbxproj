@@ -11,6 +11,7 @@
 		240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654C247AF5FA0084CB31 /* AnimalManager.swift */; };
 		240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */; };
 		240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */; };
+		240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A6552247AFB530084CB31 /* AnimalViewController.swift */; };
 		24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FB924791BF500F4E544 /* ColorForApp.swift */; };
 		24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 		240A654C247AF5FA0084CB31 /* AnimalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalManager.swift; sourceTree = "<group>"; };
 		240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
 		240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTableViewCell.xib; sourceTree = "<group>"; };
+		240A6552247AFB530084CB31 /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
 		24125FB924791BF500F4E544 /* ColorForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForApp.swift; sourceTree = "<group>"; };
 		24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCardViewController.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				24183D702470642B009D74B6 /* DisplayARViewController.swift */,
 				24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */,
 				24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */,
+				240A6552247AFB530084CB31 /* AnimalViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
+				240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */,
 				240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */,
 				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,

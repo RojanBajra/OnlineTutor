@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="139" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--Animal View Controller-->
         <scene sceneID="1xp-Pa-Oka">
             <objects>
-                <viewController id="X58-zG-251" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnimalVC" id="X58-zG-251" customClass="AnimalViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XSg-OI-TF8"/>
                         <viewControllerLayoutGuide type="bottom" id="OQB-hJ-mXT"/>
@@ -64,10 +64,16 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4r-Zl-6AS">
                                 <rect key="frame" x="20" y="86" width="374" height="30"/>
+                                <connections>
+                                    <action selector="btnAnimal:" destination="X58-zG-251" eventType="touchUpInside" id="UX3-jq-j3C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IoI-5e-SvR">
                                 <rect key="frame" x="20" y="128" width="374" height="30"/>
                                 <state key="normal" title="Show it on Camera"/>
+                                <connections>
+                                    <action selector="btnCamera:" destination="X58-zG-251" eventType="touchUpInside" id="muW-tT-bRI"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Hf-hm-dHv">
                                 <rect key="frame" x="0.0" y="166" width="414" height="730"/>
@@ -96,6 +102,12 @@
                             <constraint firstItem="h4r-Zl-6AS" firstAttribute="leading" secondItem="l6a-Pa-pbP" secondAttribute="leading" id="wbL-eF-6RL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAnimal" destination="h4r-Zl-6AS" id="hcU-mZ-cDy"/>
+                        <outlet property="btnCamera" destination="IoI-5e-SvR" id="RpA-4r-rks"/>
+                        <outlet property="tableView" destination="8Hf-hm-dHv" id="73J-HV-Jzm"/>
+                        <outlet property="txtAnimal" destination="l6a-Pa-pbP" id="aas-5v-4Nu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EME-aW-unJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
