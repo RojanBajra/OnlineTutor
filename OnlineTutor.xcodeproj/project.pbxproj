@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		240A654B247AF4D30084CB31 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654A247AF4D30084CB31 /* Animal.swift */; };
 		240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654C247AF5FA0084CB31 /* AnimalManager.swift */; };
+		240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */; };
+		240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */; };
 		24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FB924791BF500F4E544 /* ColorForApp.swift */; };
 		24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		240A654A247AF4D30084CB31 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		240A654C247AF5FA0084CB31 /* AnimalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalManager.swift; sourceTree = "<group>"; };
+		240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTableViewCell.xib; sourceTree = "<group>"; };
 		24125FB924791BF500F4E544 /* ColorForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForApp.swift; sourceTree = "<group>"; };
 		24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCardViewController.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,8 @@
 			children = (
 				24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */,
 				24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */,
+				240A654E247AFA900084CB31 /* AnimalTableViewCell.swift */,
+				240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				24183D762470642C009D74B6 /* Assets.xcassets in Resources */,
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
 				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
+				240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */,
+				240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
 				24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
