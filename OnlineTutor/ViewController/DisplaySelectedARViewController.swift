@@ -25,9 +25,9 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
+//        sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
         
-//        sceneView.scene.rootNode.addChildNode(displayAnimal())
+        sceneView.scene.rootNode.addChildNode(displayAnimal())
         
         //for sphere
 //        let sphere = SCNSphere(radius: 0.2)
@@ -106,7 +106,7 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     func displayAnimal() -> SCNNode {
-        if let animalScene = SCNScene(named: "art.scnassets/horse.scn") {
+        if let animalScene = SCNScene(named: "art.scnassets/dog.scn") {
             if let animalNode = animalScene.rootNode.childNodes.first{
                 animalNode.scale = SCNVector3(x: 0.001, y: 0.001, z: 0.001)
                 animalNode.position = SCNVector3(x: -0.2, y: 0, z: -0.5)
