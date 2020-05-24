@@ -32,7 +32,7 @@ struct PagesManager {
             ),
             Pages(
                 pageName: "Animals",
-                pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageViewController: storyboard.instantiateViewController(identifier: "AnimalVC") as! AnimalViewController,
                 pageID: "DisplayCardVC",
                 pageIcon: "icon_animal"
             ),
