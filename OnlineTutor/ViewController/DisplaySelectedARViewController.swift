@@ -27,6 +27,8 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
         
+//        sceneView.scene.rootNode.addChildNode(displayAnimal())
+        
         //for sphere
 //        let sphere = SCNSphere(radius: 0.2)
 //        let material = SCNMaterial()
@@ -101,5 +103,17 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
 //        textNode.eulerAngles.x = .pi / 2
         textNode.position = SCNVector3(x: -0.2, y: 0, z: -0.5)
         return textNode
+    }
+    
+    func displayAnimal() -> SCNNode {
+        if let animalScene = SCNScene(named: "art.scnassets/horse.scn") {
+            if let animalNode = animalScene.rootNode.childNodes.first{
+                animalNode.scale = SCNVector3(x: 0.001, y: 0.001, z: 0.001)
+                animalNode.position = SCNVector3(x: -0.2, y: 0, z: -0.5)
+                return animalNode
+            }
+            
+        }
+        return SCNNode()
     }
 }
