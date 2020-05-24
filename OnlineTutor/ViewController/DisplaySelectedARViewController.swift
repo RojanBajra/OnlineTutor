@@ -25,9 +25,9 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-//        sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
+        sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
         
-        sceneView.scene.rootNode.addChildNode(displayAnimal())
+//        sceneView.scene.rootNode.addChildNode(displayAnimal())
         
         //for sphere
 //        let sphere = SCNSphere(radius: 0.2)
@@ -77,23 +77,6 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
     }
 
     // MARK: - ARSCNViewDelegate
-//    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-//
-//        let node = SCNNode()
-//        if let imageAnchor = anchor as? ARImageAnchor{
-//            let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
-//            plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.7)
-//
-//            let planeNode = SCNNode(geometry: plane)
-//            planeNode.eulerAngles.x = -.pi / 2
-//            node.addChildNode(planeNode)
-//            planeNode.addChildNode(addNode(valueToDisplay: cards[imageAnchor.referenceImage.name!]!, planeNode: planeNode))
-//
-//        }
-//
-//        return node
-//
-//    }
     
     func addNode(valueToDisplay: String) -> SCNNode {
         let textGeometry = SCNText(string: valueToDisplay, extrusionDepth: 1.0)
