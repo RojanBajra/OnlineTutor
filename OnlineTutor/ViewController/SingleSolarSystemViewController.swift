@@ -33,6 +33,7 @@ class SingleSolarSystemViewController: UIViewController {
         self.tableView.register(UINib(nibName: "StatisticsSingleSolarSystemTableViewCell", bundle: nil), forCellReuseIdentifier: StatisticsSingleSolarSystemTableViewCell.identifier)
         
         self.tableView.separatorColor = UIColor.clear
+        self.tableView.allowsSelection = false
         
         btnCamera.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         btnCamera.layer.cornerRadius = 10
