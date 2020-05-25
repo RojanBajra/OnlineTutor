@@ -119,6 +119,10 @@ struct SolarSystemManager {
         return listOfPlanets[dataPart].planetName
     }
     
+    func getPlanetImageName(dataPart: Int) -> String {
+        return listOfPlanets[dataPart].planetName.lowercased()
+    }
+    
     func getPlanetDescription(dataPart: Int) -> String {
         return listOfPlanets[dataPart].description
     }

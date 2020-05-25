@@ -33,6 +33,13 @@ class SolarSystemTableViewController: UITableViewController {
         
         cell.lblTitle.text = planet.getPlanetName(dataPart: indexPath.row)
         cell.lblDescription.text = planet.getPlanetDescription(dataPart: indexPath.row)
+        cell.imgSolarSystem.image = UIImage.init(named: planet.getPlanetImageName(dataPart: indexPath.row) + "2d")
+        
+        cell.imgSolarSystem.layer.cornerRadius = 20
+        cell.imgSolarSystem.layer.masksToBounds = true
+        
+        cell.lblTitle.font = UIFont.boldSystemFont(ofSize: 24.0)
+        cell.lblTitle.textColor = ColorForApp.shareInstance.colorPrimary()
         
         return cell
     }
