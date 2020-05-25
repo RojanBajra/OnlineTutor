@@ -10,6 +10,7 @@ import UIKit
 
 class SolarSystemTableViewCell: UITableViewCell {
 
+    static var identifier = "SolarSystemTVC"
     @IBOutlet weak var imgSolarSystem: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
     @IBOutlet weak var lblTitle: UILabel!

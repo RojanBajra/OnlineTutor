@@ -12,6 +12,11 @@ class SolarSystemTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    func setupUI() {
+        self.tableView.register(UINib(nibName: "SolarSystemTableViewCell", bundle: nil), forCellReuseIdentifier: SolarSystemTableViewCell.identifier)
     }
 
     // MARK: - Table view data source
