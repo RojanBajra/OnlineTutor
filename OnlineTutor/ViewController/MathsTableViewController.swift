@@ -25,13 +25,13 @@ class MathsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return mathsShape.getShapeCount()
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MathsTVC", for: indexPath) as! MathsTableViewCell
         
-        cell.imgShape.image = UIImage.init(named: "dog")
+        cell.imgShape.image = UIImage.init(named: mathsShape.getImageName(dataPart: indexPath.row))
         cell.lblShapeName.text = mathsShape.getShapeName(dataPart: indexPath.row)
         cell.lblShapeDescription.text = mathsShape.getShapeDescription(dataPart: indexPath.row)
         cell.lblSymbol.text = mathsShape.getShapeSymbol(dataPart: indexPath.row)
@@ -52,6 +52,14 @@ class MathsTableViewController: UITableViewController {
         cell.lblShapeName.textColor = ColorForApp.shareInstance.colorPrimary()
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        vc.pageId = 4
+        vc.shapeId = indexPath.row + 1
+        vc.shapeInfo = mathsShape.concatInformation(dataPart: indexPath.row)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
 }

@@ -33,6 +33,7 @@
 		24153E0C247C460F005A3C66 /* MathsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153E0B247C460F005A3C66 /* MathsTableViewController.swift */; };
 		24153E0E247C48FF005A3C66 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153E0D247C48FF005A3C66 /* Maths.swift */; };
 		24153E10247C495D005A3C66 /* MathsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153E0F247C495D005A3C66 /* MathsManager.swift */; };
+		24153E12247C544A005A3C66 /* MathsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153E11247C544A005A3C66 /* MathsScene.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
 		24183D6F2470642B009D74B6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D6E2470642B009D74B6 /* art.scnassets */; };
 		24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* DisplayARViewController.swift */; };
@@ -76,6 +77,7 @@
 		24153E0B247C460F005A3C66 /* MathsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsTableViewController.swift; sourceTree = "<group>"; };
 		24153E0D247C48FF005A3C66 /* Maths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maths.swift; sourceTree = "<group>"; };
 		24153E0F247C495D005A3C66 /* MathsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsManager.swift; sourceTree = "<group>"; };
+		24153E11247C544A005A3C66 /* MathsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsScene.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24183D6C2470642B009D74B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24183D6E2470642B009D74B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				24153DEA247BBE3D005A3C66 /* AnimalScene.swift */,
 				24153E03247C24CC005A3C66 /* SolarSystemScene.swift */,
+				24153E11247C544A005A3C66 /* MathsScene.swift */,
 			);
 			path = SceneViewController;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */,
 				240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */,
 				24153DEB247BBE3D005A3C66 /* AnimalScene.swift in Sources */,
+				24153E12247C544A005A3C66 /* MathsScene.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
 				24153DF7247BE8B9005A3C66 /* SingleSolarSystemViewController.swift in Sources */,
 				24153E04247C24CC005A3C66 /* SolarSystemScene.swift in Sources */,

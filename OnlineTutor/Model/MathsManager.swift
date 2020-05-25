@@ -108,4 +108,13 @@ struct MathsManager {
         return listOfShapes[dataPart].symbol
     }
     
+    func concatInformation(dataPart: Int) -> String {
+        let info = "Shape: " + listOfShapes[dataPart].shapeName + "\nVolume: " + listOfShapes[dataPart].volume + "\nSurfaceArea: " + listOfShapes[dataPart].surfaceArea + "\nLateral Surface Area: " + listOfShapes[dataPart].lateralSurfaceArea + "\nBase Area: " + listOfShapes[dataPart].baseArea
+        return info
+    }
+    
+    func getImageName(dataPart: Int) -> String {
+        return listOfShapes[dataPart].shapeName.lowercased() + "2d"
+    }
+    
 }

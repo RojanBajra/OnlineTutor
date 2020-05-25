@@ -26,6 +26,10 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
     var imageName = ""
     var planetDescription = ""
     
+    //maths page variables
+    var shapeId = 0
+    var shapeInfo = ""
+    
     let cards: [String : String] = [
         "one" : "1",
         "two" : "2"
@@ -46,6 +50,9 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
 //            sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displaySolarSystem(radiusValue: radiusValue, imageName: imageName))
             sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displaySolarSystem(imageName: imageName))
             sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displayPlanetDescription(valueToDisplay: planetDescription))
+        }else if pageId == 4{
+            sceneView.scene.rootNode.addChildNode(MathsScene.shareInstance.displayObject(shapeId: shapeId))
+            sceneView.scene.rootNode.addChildNode(MathsScene.shareInstance.displayShapeDescription(valueToDisplay: shapeInfo))
         }
         
         sceneView.autoenablesDefaultLighting = true
