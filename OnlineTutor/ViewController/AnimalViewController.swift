@@ -76,6 +76,12 @@ class AnimalViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     @IBAction func btnCamera(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        vc.pageId = 2
+        vc.selectedAnimal = animal.getImageName(dataPart: pickedAnimalNumber)
+        vc.animalDescription = animal.getConcatinatedInformation(dataPart: pickedAnimalNumber)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     
     // MARK:- Pikcer view

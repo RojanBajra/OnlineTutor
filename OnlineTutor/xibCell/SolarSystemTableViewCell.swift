@@ -10,6 +10,10 @@ import UIKit
 
 class SolarSystemTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var imgSolarSystem: UIImageView!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,15 +10,16 @@ import Foundation
 
 struct AnimalManager {
     
+
+//    Animal(
+//        commonName: "Ant",
+//        classificationClass: "insect",
+//        phylum: "Arthropod",
+//        scientificName: "Formicidae",
+//        lifeSpan: "4 to 12 months",
+//        description: "An ant is an insect that lives and works in a large colony of ants. Most ants don't have wings, and some of them have stingers. Ants are related to both bees and wasps, and like them are social insects. Ant colonies can include anywhere from a few dozen to millions of ants, divided into jobs or castes."
+//    ),
     var listOfAnimals = [
-        Animal(
-            commonName: "Ant",
-            classificationClass: "insect",
-            phylum: "Arthropod",
-            scientificName: "Formicidae",
-            lifeSpan: "4 to 12 months",
-            description: "An ant is an insect that lives and works in a large colony of ants. Most ants don't have wings, and some of them have stingers. Ants are related to both bees and wasps, and like them are social insects. Ant colonies can include anywhere from a few dozen to millions of ants, divided into jobs or castes."
-        ),
         Animal(
             commonName: "Deer",
             classificationClass: "Mammalia",

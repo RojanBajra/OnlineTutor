@@ -12,7 +12,13 @@ import ARKit
 class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet weak var sceneView: ARSCNView!
+    
     var nameToDisplay: String = ""
+    
+    var pageId = 0
+    
+    var selectedAnimal: String = ""
+    var animalDescription: String = ""
     
     let cards: [String : String] = [
         "one" : "1",
@@ -25,7 +31,14 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         // Set the view's delegate
         sceneView.delegate = self
         
-        sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
+        if pageId == 1 {
+            sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
+        }else if pageId == 2{
+            sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimal(selectedAnimal: selectedAnimal))
+            sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimalDescription(valueToDisplay: animalDescription))
+        }
+        
+        
         
 //        sceneView.scene.rootNode.addChildNode(displayAnimal())
         

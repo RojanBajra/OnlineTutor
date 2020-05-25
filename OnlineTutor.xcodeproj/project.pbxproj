@@ -16,6 +16,9 @@
 		240A6557247B05370084CB31 /* AnimalTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */; };
 		24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FB924791BF500F4E544 /* ColorForApp.swift */; };
 		24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */; };
+		24153DEB247BBE3D005A3C66 /* AnimalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DEA247BBE3D005A3C66 /* AnimalScene.swift */; };
+		24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */; };
+		24153DEF247BD32D005A3C66 /* SolarSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
 		24183D6F2470642B009D74B6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D6E2470642B009D74B6 /* art.scnassets */; };
 		24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* DisplayARViewController.swift */; };
@@ -42,6 +45,9 @@
 		240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTitleTableViewCell.xib; sourceTree = "<group>"; };
 		24125FB924791BF500F4E544 /* ColorForApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorForApp.swift; sourceTree = "<group>"; };
 		24125FBB2479535D00F4E544 /* DisplayCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayCardViewController.swift; sourceTree = "<group>"; };
+		24153DEA247BBE3D005A3C66 /* AnimalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalScene.swift; sourceTree = "<group>"; };
+		24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewCell.swift; sourceTree = "<group>"; };
+		24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolarSystemTableViewCell.xib; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24183D6C2470642B009D74B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24183D6E2470642B009D74B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -79,6 +85,14 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
+		24153DE9247BBE0D005A3C66 /* SceneViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24153DEA247BBE3D005A3C66 /* AnimalScene.swift */,
+			);
+			path = SceneViewController;
+			sourceTree = "<group>";
+		};
 		24183D602470642A009D74B6 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,7 @@
 				24125FB824791BA600F4E544 /* resources */,
 				24CCB5182471AFBE00DF435B /* utils */,
 				24CCB51324716F7D00DF435B /* xibCell */,
+				24153DE9247BBE0D005A3C66 /* SceneViewController */,
 				24CCB51024716DBB00DF435B /* ViewController */,
 				24183D6C2470642B009D74B6 /* AppDelegate.swift */,
 				24183D6E2470642B009D74B6 /* art.scnassets */,
@@ -146,6 +161,8 @@
 				240A654F247AFA900084CB31 /* AnimalTableViewCell.xib */,
 				240A6554247B05370084CB31 /* AnimalTitleTableViewCell.swift */,
 				240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */,
+				24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */,
+				24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -222,6 +239,7 @@
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
 				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
 				240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */,
+				24153DEF247BD32D005A3C66 /* SolarSystemTableViewCell.xib in Resources */,
 				240A6557247B05370084CB31 /* AnimalTitleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +254,7 @@
 				240A6556247B05370084CB31 /* AnimalTitleTableViewCell.swift in Sources */,
 				24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */,
 				240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */,
+				24153DEB247BBE3D005A3C66 /* AnimalScene.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
 				24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
@@ -248,6 +267,7 @@
 				240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */,
 				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
+				24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */,
 				24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
