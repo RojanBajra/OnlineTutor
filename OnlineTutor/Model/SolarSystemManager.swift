@@ -127,4 +127,18 @@ struct SolarSystemManager {
         return listOfPlanets[dataPart].description
     }
     
+    func getPlanetData(dataPart: Int, positionData: Int) -> String {
+        if dataPart == 1 {
+            return listOfPlanets[positionData].description
+        }else if dataPart == 2 {
+            return listOfPlanets[positionData].radius
+        }else if dataPart == 3 {
+            return listOfPlanets[positionData].mass
+        }else if dataPart == 4 {
+            return listOfPlanets[positionData].gravity
+        }else {
+            return listOfPlanets[positionData].distanceFromSun
+        }
+    }
+    
 }
