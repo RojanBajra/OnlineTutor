@@ -19,6 +19,15 @@
 		24153DEB247BBE3D005A3C66 /* AnimalScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DEA247BBE3D005A3C66 /* AnimalScene.swift */; };
 		24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */; };
 		24153DEF247BD32D005A3C66 /* SolarSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */; };
+		24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */; };
+		24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF2247BD5B3005A3C66 /* SolarSystem.swift */; };
+		24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */; };
+		24153DF7247BE8B9005A3C66 /* SingleSolarSystemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF6247BE8B9005A3C66 /* SingleSolarSystemViewController.swift */; };
+		24153DFD247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DFB247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift */; };
+		24153DFE247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24153DFC247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib */; };
+		24153E01247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DFF247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift */; };
+		24153E02247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24153E00247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib */; };
+		24153E04247C24CC005A3C66 /* SolarSystemScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153E03247C24CC005A3C66 /* SolarSystemScene.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
 		24183D6F2470642B009D74B6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D6E2470642B009D74B6 /* art.scnassets */; };
 		24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* DisplayARViewController.swift */; };
@@ -48,6 +57,15 @@
 		24153DEA247BBE3D005A3C66 /* AnimalScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalScene.swift; sourceTree = "<group>"; };
 		24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewCell.swift; sourceTree = "<group>"; };
 		24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolarSystemTableViewCell.xib; sourceTree = "<group>"; };
+		24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewController.swift; sourceTree = "<group>"; };
+		24153DF2247BD5B3005A3C66 /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
+		24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemManager.swift; sourceTree = "<group>"; };
+		24153DF6247BE8B9005A3C66 /* SingleSolarSystemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSolarSystemViewController.swift; sourceTree = "<group>"; };
+		24153DFB247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSolarSystemTableViewCell.swift; sourceTree = "<group>"; };
+		24153DFC247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSolarSystemTableViewCell.xib; sourceTree = "<group>"; };
+		24153DFF247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsSingleSolarSystemTableViewCell.swift; sourceTree = "<group>"; };
+		24153E00247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsSingleSolarSystemTableViewCell.xib; sourceTree = "<group>"; };
+		24153E03247C24CC005A3C66 /* SolarSystemScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemScene.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24183D6C2470642B009D74B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24183D6E2470642B009D74B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -89,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				24153DEA247BBE3D005A3C66 /* AnimalScene.swift */,
+				24153E03247C24CC005A3C66 /* SolarSystemScene.swift */,
 			);
 			path = SceneViewController;
 			sourceTree = "<group>";
@@ -135,6 +154,8 @@
 				24ABA2152479993C007C2DAF /* PagesManager.swift */,
 				240A654A247AF4D30084CB31 /* Animal.swift */,
 				240A654C247AF5FA0084CB31 /* AnimalManager.swift */,
+				24153DF2247BD5B3005A3C66 /* SolarSystem.swift */,
+				24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +169,8 @@
 				24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */,
 				24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */,
 				240A6552247AFB530084CB31 /* AnimalViewController.swift */,
+				24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */,
+				24153DF6247BE8B9005A3C66 /* SingleSolarSystemViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,6 +186,10 @@
 				240A6555247B05370084CB31 /* AnimalTitleTableViewCell.xib */,
 				24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */,
 				24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */,
+				24153DFB247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift */,
+				24153DFC247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib */,
+				24153DFF247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift */,
+				24153E00247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -234,11 +261,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				24183D6F2470642B009D74B6 /* art.scnassets in Resources */,
+				24153DFE247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib in Resources */,
 				24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */,
 				24183D762470642C009D74B6 /* Assets.xcassets in Resources */,
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
 				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
 				240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */,
+				24153E02247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib in Resources */,
 				24153DEF247BD32D005A3C66 /* SolarSystemTableViewCell.xib in Resources */,
 				240A6557247B05370084CB31 /* AnimalTitleTableViewCell.xib in Resources */,
 			);
@@ -256,19 +285,26 @@
 				240A6550247AFA900084CB31 /* AnimalTableViewCell.swift in Sources */,
 				24153DEB247BBE3D005A3C66 /* AnimalScene.swift in Sources */,
 				24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */,
+				24153DF7247BE8B9005A3C66 /* SingleSolarSystemViewController.swift in Sources */,
+				24153E04247C24CC005A3C66 /* SolarSystemScene.swift in Sources */,
 				24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				240A654B247AF4D30084CB31 /* Animal.swift in Sources */,
+				24153DFD247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift in Sources */,
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
+				24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
+				24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
+				24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */,
 				240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */,
 				240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */,
 				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
 				24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */,
 				24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */,
+				24153E01247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

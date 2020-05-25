@@ -17,8 +17,14 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
     
     var pageId = 0
     
+    //animal page variables
     var selectedAnimal: String = ""
     var animalDescription: String = ""
+    
+    //solar sytem page variables
+    var radiusValue = 1.0
+    var imageName = ""
+    var planetDescription = ""
     
     let cards: [String : String] = [
         "one" : "1",
@@ -36,7 +42,13 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         }else if pageId == 2{
             sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimal(selectedAnimal: selectedAnimal))
             sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimalDescription(valueToDisplay: animalDescription))
+        }else if pageId == 3{
+//            sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displaySolarSystem(radiusValue: radiusValue, imageName: imageName))
+            sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displaySolarSystem(imageName: imageName))
+            sceneView.scene.rootNode.addChildNode(SolarSystemScene.shareInstance.displayPlanetDescription(valueToDisplay: planetDescription))
         }
+        
+        sceneView.autoenablesDefaultLighting = true
         
         
         

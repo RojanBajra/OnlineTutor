@@ -21,4 +21,10 @@ class Design {
         view.layer.shadowRadius = radius
     }
     
+    func makeTextBold(textToMakeBold: String, boldSize: CGFloat) -> NSAttributedString {
+        let font = UIFont.systemFont(ofSize: boldSize)
+        let attributes = [NSAttributedString.Key.font: font]
+        return NSAttributedString(string: textToMakeBold, attributes: attributes)
+    }
+    
 }
