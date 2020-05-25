@@ -10,6 +10,8 @@ import UIKit
 
 class SolarSystemTableViewController: UITableViewController {
 
+    let planet = SolarSystemManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -23,7 +25,16 @@ class SolarSystemTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return planet.getPlanetCount()
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SolarSystemTVC", for: indexPath) as! SolarSystemTableViewCell
+        
+        cell.lblTitle.text = planet.getPlanetName(dataPart: indexPath.row)
+        cell.lblDescription.text = planet.getPlanetDescription(dataPart: indexPath.row)
+        
+        return cell
     }
 
 }

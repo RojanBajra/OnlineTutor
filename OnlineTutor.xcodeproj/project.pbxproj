@@ -20,6 +20,8 @@
 		24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */; };
 		24153DEF247BD32D005A3C66 /* SolarSystemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */; };
 		24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */; };
+		24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF2247BD5B3005A3C66 /* SolarSystem.swift */; };
+		24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */; };
 		24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D6C2470642B009D74B6 /* AppDelegate.swift */; };
 		24183D6F2470642B009D74B6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D6E2470642B009D74B6 /* art.scnassets */; };
 		24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* DisplayARViewController.swift */; };
@@ -50,6 +52,8 @@
 		24153DEC247BD32D005A3C66 /* SolarSystemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewCell.swift; sourceTree = "<group>"; };
 		24153DED247BD32D005A3C66 /* SolarSystemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SolarSystemTableViewCell.xib; sourceTree = "<group>"; };
 		24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemTableViewController.swift; sourceTree = "<group>"; };
+		24153DF2247BD5B3005A3C66 /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
+		24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystemManager.swift; sourceTree = "<group>"; };
 		24183D692470642B009D74B6 /* OnlineTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlineTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24183D6C2470642B009D74B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24183D6E2470642B009D74B6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 				24ABA2152479993C007C2DAF /* PagesManager.swift */,
 				240A654A247AF4D30084CB31 /* Animal.swift */,
 				240A654C247AF5FA0084CB31 /* AnimalManager.swift */,
+				24153DF2247BD5B3005A3C66 /* SolarSystem.swift */,
+				24153DF4247BD6D2005A3C66 /* SolarSystemManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,7 +270,9 @@
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				240A654B247AF4D30084CB31 /* Animal.swift in Sources */,
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
+				24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
+				24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
 				24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */,
 				240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */,

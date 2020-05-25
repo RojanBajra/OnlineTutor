@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct SolarSystem {
+    
+    var planetName: String = ""
+    var radius: String = ""
+    var mass: String = ""
+    var gravity: String = ""
+    var distanceFromSun: String = ""
+    var description: String = ""
+    var radiusAR: Float = 0.0
+    
+}
