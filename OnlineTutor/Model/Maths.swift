@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Maths {
+    
+    var shapeName = ""
+    var description = ""
+    var symbol = ""
+    var volume = ""
+    var surfaceArea = ""
+    var lateralSurfaceArea = ""
+    var baseArea = ""
+    
+}

@@ -14,6 +14,7 @@ class MathsTableViewCell: UITableViewCell {
     @IBOutlet weak var imgShape: UIImageView!
     @IBOutlet weak var lblShapeName: UILabel!
     @IBOutlet weak var lblShapeDescription: UILabel!
+    @IBOutlet weak var lblSymbol: UILabel!
     @IBOutlet weak var lblVolume: UILabel!
     @IBOutlet weak var lblSurfaceArea: UILabel!
     @IBOutlet weak var lblBaseArea: UILabel!

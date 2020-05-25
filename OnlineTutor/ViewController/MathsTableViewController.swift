@@ -10,6 +10,8 @@ import UIKit
 
 class MathsTableViewController: UITableViewController {
 
+    let mathsShape = MathsManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -30,12 +32,13 @@ class MathsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MathsTVC", for: indexPath) as! MathsTableViewCell
         
         cell.imgShape.image = UIImage.init(named: "dog")
-        cell.lblShapeName.text = "Shape Name"
-        cell.lblShapeDescription.text = "Shape Description"
-        cell.lblVolume.text = "Volume formula"
-        cell.lblSurfaceArea.text = "Surface Area formula"
-        cell.lblLateralSurfaceArea.text = "Lateral Surface Area formula"
-        cell.lblBaseArea.text = "Base Area Formula"
+        cell.lblShapeName.text = mathsShape.getShapeName(dataPart: indexPath.row)
+        cell.lblShapeDescription.text = mathsShape.getShapeDescription(dataPart: indexPath.row)
+        cell.lblSymbol.text = mathsShape.getShapeSymbol(dataPart: indexPath.row)
+        cell.lblVolume.text = mathsShape.getShapeVolume(dataPart: indexPath.row)
+        cell.lblSurfaceArea.text = mathsShape.getShapeSurfaceArea(dataPart: indexPath.row)
+        cell.lblLateralSurfaceArea.text = mathsShape.getShapeLateralSurfaceArea(dataPart: indexPath.row)
+        cell.lblBaseArea.text = mathsShape.getShapeBaseArea(dataPart: indexPath.row)
         
         cell.viewPart.layer.cornerRadius = 20
         cell.viewPart.backgroundColor = UIColor.white
