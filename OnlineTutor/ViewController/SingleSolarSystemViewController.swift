@@ -30,6 +30,7 @@ class SingleSolarSystemViewController: UIViewController {
         
         self.tableView.register(UINib(nibName: "SingleSolarSystemTableViewCell", bundle: nil), forCellReuseIdentifier: SingleSolarSystemTableViewCell.identifier)
         self.tableView.register(UINib(nibName: "AnimalTitleTableViewCell", bundle: nil), forCellReuseIdentifier: AnimalTitleTableViewCell.identifier)
+        self.tableView.register(UINib(nibName: "StatisticsSingleSolarSystemTableViewCell", bundle: nil), forCellReuseIdentifier: StatisticsSingleSolarSystemTableViewCell.identifier)
         
         self.tableView.separatorColor = UIColor.clear
         
@@ -62,16 +63,20 @@ extension SingleSolarSystemViewController: UITableViewDelegate, UITableViewDataS
             
             return cell
         }else{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "SingleSolarSystemTVC") as! SingleSolarSystemTableViewCell
             
             if indexPath.row > 1 {
-                var boldText = Design.shareInstance.makeTextBold(textToMakeBold: labelTitle[indexPath.row - 2], boldSize: 23.0)
-//                cell.lblTitle.attributedText = boldText + planetManager.getPlanetData(dataPart: indexPath.row, positionData: planetNumber)
-                cell.lblTitle.text = labelTitle[indexPath.row - 2] + planetManager.getPlanetData(dataPart: indexPath.row, positionData: planetNumber)
+                let cell = tableView.dequeueReusableCell(withIdentifier: "StatisticsSingleSolarSystemTVC") as! StatisticsSingleSolarSystemTableViewCell
+                cell.lblTitle.text = labelTitle[indexPath.row - 2]
+                cell.lblValue.text = planetManager.getPlanetData(dataPart: indexPath.row, positionData: planetNumber)
+                
+                cell.lblTitle.font = UIFont.boldSystemFont(ofSize: 16.0)
+                return cell
             }else{
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SingleSolarSystemTVC") as! SingleSolarSystemTableViewCell
                 cell.lblTitle.text = planetManager.getPlanetData(dataPart: indexPath.row, positionData: planetNumber)
+                return cell
             }
-            return cell
+            
         }
     }
     

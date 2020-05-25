@@ -9,7 +9,11 @@
 import UIKit
 
 class StatisticsSingleSolarSystemTableViewCell: UITableViewCell {
-
+    
+    static var identifier = "StatisticsSingleSolarSystemTVC"
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblValue: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
