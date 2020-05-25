@@ -145,4 +145,10 @@ struct SolarSystemManager {
         return listOfPlanets[dataPart].radiusAR
     }
     
+    func getConcatinatedPlanetInformation(dataPart: Int) -> String {
+        let info = "Planet Name: " + listOfPlanets[dataPart].planetName + "\nRadius: " + listOfPlanets[dataPart].radius + "\nMass: " + listOfPlanets[dataPart].mass + "\nGravity" + listOfPlanets[dataPart].gravity + "\nDistance from sun: " + listOfPlanets[dataPart].distanceFromSun
+        print("information on planet " + info)
+        return info
+    }
+    
 }

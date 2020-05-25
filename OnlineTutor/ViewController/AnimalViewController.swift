@@ -125,7 +125,7 @@ extension AnimalViewController: UITableViewDelegate, UITableViewDataSource{
             
             cell.lblTitle.font = UIFont.boldSystemFont(ofSize: 26.0)
             
-            Design.shareInstance.addDropShadow(view: cell.viewImage, shadowColor: UIColor.black, opacity: 0.8, shadowOffset: CGSize(width: 1, height: 1), radius: 7.5)
+            Design.shareInstance.addDropShadow(view: cell.viewImage, shadowColor: UIColor.black, opacity: 0.8, shadowOffset: CGSize(width: 1, height: 1), radius: 5.5)
 
             cell.imgAnimal.clipsToBounds = true
             cell.imgAnimal.layer.cornerRadius = cell.imgAnimal.frame.width / 2.0

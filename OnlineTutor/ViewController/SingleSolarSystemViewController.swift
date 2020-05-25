@@ -44,6 +44,7 @@ class SingleSolarSystemViewController: UIViewController {
         vc.pageId = 3
         vc.radiusValue = Double(planetManager.getRadiusAR(dataPart: planetNumber))
         vc.imageName = planetManager.getPlanetImageName(dataPart: planetNumber)
+        vc.planetDescription = planetManager.getConcatinatedPlanetInformation(dataPart: planetNumber)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
