@@ -141,4 +141,8 @@ struct SolarSystemManager {
         }
     }
     
+    func getRadiusAR(dataPart: Int) -> Float {
+        return listOfPlanets[dataPart].radiusAR
+    }
+    
 }

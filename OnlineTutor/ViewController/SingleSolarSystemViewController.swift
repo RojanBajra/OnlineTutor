@@ -42,6 +42,8 @@ class SingleSolarSystemViewController: UIViewController {
     @IBAction func btnCamera(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
         vc.pageId = 3
+        vc.radiusValue = Double(planetManager.getRadiusAR(dataPart: planetNumber))
+        vc.imageName = planetManager.getPlanetImageName(dataPart: planetNumber)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 

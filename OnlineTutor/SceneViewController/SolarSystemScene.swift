@@ -13,17 +13,18 @@ class SolarSystemScene {
     
     static let shareInstance = SolarSystemScene()
     
-    func displaySolarSystem() -> SCNNode {
-        let sphere = SCNSphere(radius: 1)
+    func displaySolarSystem(radiusValue: Double, imageName: String) -> SCNNode {
+        let sphere = SCNSphere(radius: CGFloat(radiusValue))
         
         let material = SCNMaterial()
-        material.diffuse.contents = UIColor.red
+        var imageLocation = "art.scnassets/" + imageName + ".jpg"
+        material.diffuse.contents = UIImage.init(named: imageLocation)
         
         sphere.materials = [material]
         
         let node = SCNNode()
         
-        node.position = SCNVector3(0.1, 0.1, -0.9)
+        node.position = SCNVector3(0.1, 0.1, -20.9)
         node.geometry = sphere
         
         return node
