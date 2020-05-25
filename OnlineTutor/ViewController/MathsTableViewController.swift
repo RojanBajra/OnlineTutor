@@ -12,79 +12,43 @@ class MathsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        setupUI()
+    }
+    
+    func setupUI() {
+        self.tableView.register(UINib(nibName: "MathsTableViewCell", bundle: nil), forCellReuseIdentifier: MathsTableViewCell.identifier)
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 5
     }
-
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MathsTVC", for: indexPath) as! MathsTableViewCell
+        
+        cell.imgShape.image = UIImage.init(named: "dog")
+        cell.lblShapeName.text = "Shape Name"
+        cell.lblShapeDescription.text = "Shape Description"
+        cell.lblVolume.text = "Volume formula"
+        cell.lblSurfaceArea.text = "Surface Area formula"
+        cell.lblLateralSurfaceArea.text = "Lateral Surface Area formula"
+        cell.lblBaseArea.text = "Base Area Formula"
+        
+        cell.viewPart.layer.cornerRadius = 20
+        cell.viewPart.backgroundColor = UIColor.white
+        cell.viewPart.layer.borderColor = ColorForApp.shareInstance.colorPrimary().cgColor
+        cell.viewPart.layer.borderWidth = 2
+        Design.shareInstance.addDropShadow(view: cell.viewPart, shadowColor: UIColor.black, opacity: 0.4, shadowOffset: CGSize(width: 1, height: 1), radius: 5.5)
+        
+        cell.imgShape.layer.cornerRadius = 20
+        
+        cell.lblShapeName.font = UIFont.boldSystemFont(ofSize: 20.0)
+        cell.lblShapeName.textColor = ColorForApp.shareInstance.colorPrimary()
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

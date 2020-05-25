@@ -424,6 +424,34 @@
             </objects>
             <point key="canvasLocation" x="2789.8550724637685" y="127.90178571428571"/>
         </scene>
+        <!--Maths Table View Controller-->
+        <scene sceneID="kzC-EC-Y9D">
+            <objects>
+                <tableViewController storyboardIdentifier="MathsTableVC" id="r1C-Md-TYX" customClass="MathsTableViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ue2-jc-AIY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="swo-wF-NIl">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="swo-wF-NIl" id="CKf-Lu-7Rn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="r1C-Md-TYX" id="WL6-Ub-Y2T"/>
+                            <outlet property="delegate" destination="r1C-Md-TYX" id="Raw-qD-5Mt"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54v-bY-GsT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3775" y="135"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="w2D-Ze-fhN">
             <objects>
