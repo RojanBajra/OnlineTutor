@@ -33,13 +33,13 @@ struct PagesManager {
             Pages(
                 pageName: "Animals",
                 pageViewController: storyboard.instantiateViewController(identifier: "AnimalVC") as! AnimalViewController,
-                pageID: "DisplayCardVC",
+                pageID: "AnimalVC",
                 pageIcon: "icon_animal"
             ),
             Pages(
                 pageName: "Mathematics",
-                pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
+                pageViewController: storyboard.instantiateViewController(identifier: "MathsTableVC") as! MathsTableViewController,
+                pageID: "MathsTableVC",
                 pageIcon: "icon_maths"
             ),
             Pages(
@@ -51,7 +51,7 @@ struct PagesManager {
             Pages(
                 pageName: "Solar System",
                 pageViewController: storyboard.instantiateViewController(identifier: "SolarSystemTableVC") as! SolarSystemTableViewController,
-                pageID: "DisplayCardVC",
+                pageID: "SolarSystemTableVC",
                 pageIcon: "icon_solarSystem"
             ),
             Pages(
