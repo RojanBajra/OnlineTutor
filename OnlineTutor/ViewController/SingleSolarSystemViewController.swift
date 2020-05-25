@@ -38,6 +38,12 @@ class SingleSolarSystemViewController: UIViewController {
         btnCamera.layer.cornerRadius = 10
         
     }
+    
+    @IBAction func btnCamera(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        vc.pageId = 3
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
