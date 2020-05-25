@@ -50,7 +50,7 @@ struct PagesManager {
             ),
             Pages(
                 pageName: "Solar System",
-                pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+                pageViewController: storyboard.instantiateViewController(identifier: "SolarSystemTableVC") as! SolarSystemTableViewController,
                 pageID: "DisplayCardVC",
                 pageIcon: "icon_solarSystem"
             ),
