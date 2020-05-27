@@ -68,6 +68,9 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.pageValue.getPageViewController(dataNumber: indexPath.row)
+        if self.pageValue.getPageName(dataNumber: indexPath.row) == "Test Yourself" {
+            (vc as! TestViewController).isAppearingFromHomePage = true
+        }
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

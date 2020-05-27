@@ -20,22 +20,39 @@ class TestViewController: UIViewController {
     var currentQuestion = 0
     var correctAnswers = 0
     let questionManager = QuestionManager()
+    var isAppearingFromHomePage = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        generateRandomQuestionNubmers()
+        print("how many times?")
+//        generateRandomQuestionNubmers()
         setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if isAppearingFromHomePage == true {
+            currentQuestion = 0
+            questionNumbers.removeAll()
+            correctAnswers = 0
+            generateRandomQuestionNubmers()
+            displayingQuestionAndOptions()
+            isAppearingFromHomePage = false
+        }
         print("correct answers \(correctAnswers) total question \(currentQuestion)")
     }
     
-    func setupUI() {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("yo chahi?")
+    }
+    
+    func displayingQuestionAndOptions() {
         lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
         setupOptions()
+    }
+    
+    func setupUI() {
         
         btnOption1.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         btnOption2.backgroundColor = ColorForApp.shareInstance.colorPrimary()
@@ -83,11 +100,12 @@ class TestViewController: UIViewController {
         currentQuestion = currentQuestion + 1
         
         if currentQuestion >= 5 {
+            showAlertMessage()
             currentQuestion = 0
             correctAnswers = 0
             questionNumbers = []
             print("total correct answer is " + String(correctAnswers))
-            showAlertMessage()
+            
             
         }else{
             lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
@@ -106,7 +124,7 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func btnCamera(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "MathsTableVC") as! MathsTableViewController
+        let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
