@@ -42,6 +42,7 @@
 		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
 		24516835247E383700BD4C1E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516834247E383700BD4C1E /* TestViewController.swift */; };
 		24516837247E453E00BD4C1E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516836247E453E00BD4C1E /* Question.swift */; };
+		24516839247E491700BD4C1E /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516838247E491700BD4C1E /* QuestionManager.swift */; };
 		24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */; };
 		24ABA2142479954A007C2DAF /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2132479954A007C2DAF /* Pages.swift */; };
 		24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2152479993C007C2DAF /* PagesManager.swift */; };
@@ -90,6 +91,7 @@
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24516834247E383700BD4C1E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		24516836247E453E00BD4C1E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		24516838247E491700BD4C1E /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
 		24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedViewController.swift; sourceTree = "<group>"; };
 		24ABA2132479954A007C2DAF /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		24ABA2152479993C007C2DAF /* PagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesManager.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				24153E0D247C48FF005A3C66 /* Maths.swift */,
 				24153E0F247C495D005A3C66 /* MathsManager.swift */,
 				24516836247E453E00BD4C1E /* Question.swift */,
+				24516838247E491700BD4C1E /* QuestionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
 				24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
+				24516839247E491700BD4C1E /* QuestionManager.swift in Sources */,
 				24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */,
 				24153E10247C495D005A3C66 /* MathsManager.swift in Sources */,
 				240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */,
