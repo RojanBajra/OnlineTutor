@@ -370,50 +370,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-L4-hk3">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aty-L4-hk3">
                                 <rect key="frame" x="20" y="812" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="D31-rm-RDQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="FALSE"/>
+                                <state key="normal" title="Option 3"/>
                                 <connections>
-                                    <action selector="btnFalse:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="19f-3I-jIg"/>
+                                    <action selector="btnAnswer:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="GhQ-4g-m2e"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jT-tm-HCy">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jT-tm-HCy">
                                 <rect key="frame" x="20" y="754" width="374" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="TRUE"/>
+                                <state key="normal" title="Option 2"/>
                                 <connections>
-                                    <action selector="btnTrue:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="lFM-YC-alR"/>
+                                    <action selector="btnAnswer:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="zeW-sE-csw"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-nl-ETF">
-                                <rect key="frame" x="20" y="52" width="374" height="694"/>
+                                <rect key="frame" x="20" y="52" width="374" height="636"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OJ-Qn-JAa">
+                                <rect key="frame" x="20" y="696" width="374" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Option 1"/>
+                                <connections>
+                                    <action selector="btnAnswer:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="JoA-Xl-3wK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="height" secondItem="1jT-tm-HCy" secondAttribute="height" id="5vq-WJ-1UA"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="leading" secondItem="Aty-L4-hk3" secondAttribute="leading" id="7NS-fr-sWl"/>
                             <constraint firstItem="9AE-LU-GFx" firstAttribute="top" secondItem="Aty-L4-hk3" secondAttribute="bottom" id="CVI-Lx-CGb"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="height" secondItem="Aty-L4-hk3" secondAttribute="height" id="Cx7-aV-2gC"/>
                             <constraint firstItem="Aty-L4-hk3" firstAttribute="top" secondItem="1jT-tm-HCy" secondAttribute="bottom" constant="8" id="EhE-Qp-p4w"/>
+                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="trailing" secondItem="1jT-tm-HCy" secondAttribute="trailing" id="F9s-ss-bIA"/>
+                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="top" secondItem="4Oh-nl-ETF" secondAttribute="bottom" constant="8" id="FbP-E4-fMo"/>
                             <constraint firstItem="4Oh-nl-ETF" firstAttribute="leading" secondItem="Dyp-YQ-WXN" secondAttribute="leading" constant="20" id="HHk-Cu-HDT"/>
+                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="leading" secondItem="1jT-tm-HCy" secondAttribute="leading" id="HrI-Hm-RMG"/>
                             <constraint firstAttribute="trailing" secondItem="Aty-L4-hk3" secondAttribute="trailing" constant="20" id="ZRV-PC-scu"/>
                             <constraint firstAttribute="trailing" secondItem="4Oh-nl-ETF" secondAttribute="trailing" constant="20" id="aea-hV-lxU"/>
                             <constraint firstItem="Aty-L4-hk3" firstAttribute="leading" secondItem="Dyp-YQ-WXN" secondAttribute="leading" constant="20" id="hZq-NB-bcz"/>
                             <constraint firstItem="4Oh-nl-ETF" firstAttribute="top" secondItem="3us-Nw-hAC" secondAttribute="bottom" constant="8" id="ryZ-v0-wKS"/>
+                            <constraint firstItem="1jT-tm-HCy" firstAttribute="top" secondItem="9OJ-Qn-JAa" secondAttribute="bottom" constant="8" id="w1F-dz-WmQ"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="trailing" secondItem="Aty-L4-hk3" secondAttribute="trailing" id="xFZ-gM-Gd7"/>
-                            <constraint firstItem="1jT-tm-HCy" firstAttribute="top" secondItem="4Oh-nl-ETF" secondAttribute="bottom" constant="8" id="zxX-0n-3WF"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnFalse" destination="Aty-L4-hk3" id="47T-pe-4m6"/>
-                        <outlet property="btnTrue" destination="1jT-tm-HCy" id="3kp-t8-Ld7"/>
+                        <outlet property="btnOption1" destination="9OJ-Qn-JAa" id="uLB-ck-lsT"/>
+                        <outlet property="btnOption2" destination="1jT-tm-HCy" id="9Wf-Tc-rUU"/>
+                        <outlet property="btnOption3" destination="Aty-L4-hk3" id="g3l-Mw-cBA"/>
                         <outlet property="lblQuestion" destination="4Oh-nl-ETF" id="ha0-Yg-q4i"/>
                     </connections>
                 </viewController>

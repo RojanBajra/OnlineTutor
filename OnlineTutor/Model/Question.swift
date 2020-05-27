@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Question {
+    
+    var questionTitle: String
+    var correctAnswer: String
+    var options: String
+    var image3d: String
+    
+}
