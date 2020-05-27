@@ -91,4 +91,12 @@ struct QuestionManager {
         return listOfQuestion[dataPart].options[buttonNumber]
     }
     
+    func checkAnswer(userAnswer: String, dataPart: Int) -> Bool {
+        if userAnswer.lowercased() == listOfQuestion[dataPart].correctAnswer.lowercased() {
+            return true
+        }else{
+            return false
+        }
+    }
+    
 }

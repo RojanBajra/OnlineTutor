@@ -18,6 +18,7 @@ class TestViewController: UIViewController {
     
     var questionNumbers:[Int] = []
     var currentQuestion = 0
+    var correctAnswers = 0
     let questionManager = QuestionManager()
     
     override func viewDidLoad() {
@@ -69,14 +70,30 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func btnAnswer(_ sender: UIButton) {
+        
+        if questionManager.checkAnswer(userAnswer: sender.titleLabel!.text!, dataPart: questionNumbers[currentQuestion]) {
+            correctAnswers = correctAnswers + 1
+        }
+        
         currentQuestion = currentQuestion + 1
         
         if currentQuestion >= 5 {
             currentQuestion = 0
+            print("total correct answer is " + String(correctAnswers))
+            showAlertMessage()
+            
         }
         
         lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
         setupOptions()
+    }
+    
+    func showAlertMessage() {
+        let alert = UIAlertController(title: "Test Result", message: "Total Questions \(questionNumbers.count)\nTotal Correct Answers: \(correctAnswers)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {action in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     
     @IBAction func btnCamera(_ sender: UIButton) {
