@@ -358,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="1953.6231884057972" y="880.58035714285711"/>
         </scene>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="CpG-UQ-xOe">
             <objects>
-                <viewController id="Hkm-3a-g3n" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestVC" id="Hkm-3a-g3n" customClass="TestViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3us-Nw-hAC"/>
                         <viewControllerLayoutGuide type="bottom" id="9AE-LU-GFx"/>
@@ -377,11 +377,17 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="FALSE"/>
+                                <connections>
+                                    <action selector="btnFalse:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="19f-3I-jIg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jT-tm-HCy">
                                 <rect key="frame" x="20" y="754" width="374" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="TRUE"/>
+                                <connections>
+                                    <action selector="btnTrue:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="lFM-YC-alR"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-nl-ETF">
                                 <rect key="frame" x="20" y="52" width="374" height="694"/>
@@ -405,6 +411,11 @@
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="top" secondItem="4Oh-nl-ETF" secondAttribute="bottom" constant="8" id="zxX-0n-3WF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnFalse" destination="Aty-L4-hk3" id="47T-pe-4m6"/>
+                        <outlet property="btnTrue" destination="1jT-tm-HCy" id="3kp-t8-Ld7"/>
+                        <outlet property="lblQuestion" destination="4Oh-nl-ETF" id="ha0-Yg-q4i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cW6-p3-aSF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
