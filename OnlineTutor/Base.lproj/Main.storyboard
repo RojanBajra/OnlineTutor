@@ -390,7 +390,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question will be displayed here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Oh-nl-ETF">
-                                <rect key="frame" x="20" y="52" width="374" height="636"/>
+                                <rect key="frame" x="20" y="52" width="374" height="598"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -403,27 +403,41 @@
                                     <action selector="btnAnswer:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="JoA-Xl-3wK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW1-zC-Sow">
+                                <rect key="frame" x="212" y="658" width="182" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="182" id="VdF-Ou-KEs"/>
+                                    <constraint firstAttribute="height" constant="30" id="f89-sM-LHH"/>
+                                </constraints>
+                                <state key="normal" title="Show the Figure"/>
+                                <connections>
+                                    <action selector="btnCamera:" destination="Hkm-3a-g3n" eventType="touchUpInside" id="j8H-Sh-xMn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="9OJ-Qn-JAa" firstAttribute="height" secondItem="1jT-tm-HCy" secondAttribute="height" id="5vq-WJ-1UA"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="leading" secondItem="Aty-L4-hk3" secondAttribute="leading" id="7NS-fr-sWl"/>
+                            <constraint firstItem="xW1-zC-Sow" firstAttribute="top" secondItem="4Oh-nl-ETF" secondAttribute="bottom" constant="8" id="8cn-yZ-oQB"/>
                             <constraint firstItem="9AE-LU-GFx" firstAttribute="top" secondItem="Aty-L4-hk3" secondAttribute="bottom" id="CVI-Lx-CGb"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="height" secondItem="Aty-L4-hk3" secondAttribute="height" id="Cx7-aV-2gC"/>
                             <constraint firstItem="Aty-L4-hk3" firstAttribute="top" secondItem="1jT-tm-HCy" secondAttribute="bottom" constant="8" id="EhE-Qp-p4w"/>
                             <constraint firstItem="9OJ-Qn-JAa" firstAttribute="trailing" secondItem="1jT-tm-HCy" secondAttribute="trailing" id="F9s-ss-bIA"/>
-                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="top" secondItem="4Oh-nl-ETF" secondAttribute="bottom" constant="8" id="FbP-E4-fMo"/>
                             <constraint firstItem="4Oh-nl-ETF" firstAttribute="leading" secondItem="Dyp-YQ-WXN" secondAttribute="leading" constant="20" id="HHk-Cu-HDT"/>
                             <constraint firstItem="9OJ-Qn-JAa" firstAttribute="leading" secondItem="1jT-tm-HCy" secondAttribute="leading" id="HrI-Hm-RMG"/>
+                            <constraint firstAttribute="trailing" secondItem="xW1-zC-Sow" secondAttribute="trailing" constant="20" id="Vkg-pl-yO8"/>
                             <constraint firstAttribute="trailing" secondItem="Aty-L4-hk3" secondAttribute="trailing" constant="20" id="ZRV-PC-scu"/>
                             <constraint firstAttribute="trailing" secondItem="4Oh-nl-ETF" secondAttribute="trailing" constant="20" id="aea-hV-lxU"/>
                             <constraint firstItem="Aty-L4-hk3" firstAttribute="leading" secondItem="Dyp-YQ-WXN" secondAttribute="leading" constant="20" id="hZq-NB-bcz"/>
+                            <constraint firstItem="9OJ-Qn-JAa" firstAttribute="top" secondItem="xW1-zC-Sow" secondAttribute="bottom" constant="8" id="lGO-1W-xLa"/>
                             <constraint firstItem="4Oh-nl-ETF" firstAttribute="top" secondItem="3us-Nw-hAC" secondAttribute="bottom" constant="8" id="ryZ-v0-wKS"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="top" secondItem="9OJ-Qn-JAa" secondAttribute="bottom" constant="8" id="w1F-dz-WmQ"/>
                             <constraint firstItem="1jT-tm-HCy" firstAttribute="trailing" secondItem="Aty-L4-hk3" secondAttribute="trailing" id="xFZ-gM-Gd7"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCamera" destination="xW1-zC-Sow" id="S2Q-o8-0df"/>
                         <outlet property="btnOption1" destination="9OJ-Qn-JAa" id="uLB-ck-lsT"/>
                         <outlet property="btnOption2" destination="1jT-tm-HCy" id="9Wf-Tc-rUU"/>
                         <outlet property="btnOption3" destination="Aty-L4-hk3" id="g3l-Mw-cBA"/>

@@ -87,4 +87,8 @@ struct QuestionManager {
         return listOfQuestion[dataPart].questionTitle
     }
     
+    func getOptions(dataPart: Int, buttonNumber: Int) -> String {
+        return listOfQuestion[dataPart].options[buttonNumber]
+    }
+    
 }
