@@ -15,5 +15,6 @@ struct Question {
     var options: [String]
     var image3d: String
     var isImage: Bool
+    var questionType: String
     
 }

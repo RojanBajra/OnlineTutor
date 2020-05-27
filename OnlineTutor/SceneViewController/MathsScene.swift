@@ -150,4 +150,24 @@ class MathsScene{
         return node
     }
     
+    func displayForTest(imageName: String) -> SCNNode {
+        
+        if imageName.lowercased() == "cube" {
+            return displayCube(width: 1, height: 1, length: 1)
+        }else if imageName.lowercased() == "cuboid" {
+            return displayCube(width: 1, height: 2, length: 3)
+        }else if imageName.lowercased() == "sphere" {
+            return displaySphere()
+        }else if imageName.lowercased() == "torus" {
+            return displayTorus()
+        }else if imageName.lowercased() == "cylinder" {
+            return displayCylinder()
+        }else if imageName.lowercased() == "pyramid" {
+            return displayPyramid()
+        }else {
+            return displayCone()
+        }
+        
+    }
+    
 }

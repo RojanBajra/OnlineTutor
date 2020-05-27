@@ -125,6 +125,10 @@ class TestViewController: UIViewController {
     
     @IBAction func btnCamera(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(identifier: "DisplaySelectedARVC") as! DisplaySelectedARViewController
+        vc.pageId = 5
+        vc.testImageName = questionManager.getImageName(dataPart: questionNumbers[currentQuestion])
+        vc.isImage = questionManager.getIfImageOrNot(dataPart: questionNumbers[currentQuestion])
+        vc.questionType = questionManager.getQuestionType(dataPart: questionNumbers[currentQuestion])
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

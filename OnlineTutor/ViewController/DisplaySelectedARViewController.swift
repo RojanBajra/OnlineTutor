@@ -35,6 +35,11 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         "two" : "2"
     ]
     
+    //test page variables
+    var testImageName = ""
+    var isImage = false
+    var questionType = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,7 +47,7 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         if pageId == 1 {
-            sceneView.scene.rootNode.addChildNode(addNode(valueToDisplay: nameToDisplay))
+            sceneView.scene.rootNode.addChildNode(AlphabetScene.shareInstance.addNode(valueToDisplay: nameToDisplay))
         }else if pageId == 2{
             sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimal(selectedAnimal: selectedAnimal))
             sceneView.scene.rootNode.addChildNode(AnimalScene.shareInstance.displayAnimalDescription(valueToDisplay: animalDescription))
@@ -53,6 +58,8 @@ class DisplaySelectedARViewController: UIViewController, ARSCNViewDelegate {
         }else if pageId == 4{
             sceneView.scene.rootNode.addChildNode(MathsScene.shareInstance.displayObject(shapeId: shapeId))
             sceneView.scene.rootNode.addChildNode(MathsScene.shareInstance.displayShapeDescription(valueToDisplay: shapeInfo))
+        }else if pageId == 5{
+            sceneView.scene.rootNode.addChildNode(TestScene.shareInstance.displayObject(imageName: testImageName, isImage: isImage, questionType: questionType))
         }
         
         sceneView.autoenablesDefaultLighting = true

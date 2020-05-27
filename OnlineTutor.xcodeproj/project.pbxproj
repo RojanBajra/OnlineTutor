@@ -40,6 +40,8 @@
 		24183D742470642B009D74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D722470642B009D74B6 /* Main.storyboard */; };
 		24183D762470642C009D74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D752470642C009D74B6 /* Assets.xcassets */; };
 		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
+		242C7DE4247F07E800CEFCEE /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7DE3247F07E800CEFCEE /* TestScene.swift */; };
+		242C7DE6247F0BCB00CEFCEE /* AlphabetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7DE5247F0BCB00CEFCEE /* AlphabetScene.swift */; };
 		24516835247E383700BD4C1E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516834247E383700BD4C1E /* TestViewController.swift */; };
 		24516837247E453E00BD4C1E /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516836247E453E00BD4C1E /* Question.swift */; };
 		24516839247E491700BD4C1E /* QuestionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516838247E491700BD4C1E /* QuestionManager.swift */; };
@@ -89,6 +91,8 @@
 		24183D752470642C009D74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24183D782470642C009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242C7DE3247F07E800CEFCEE /* TestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
+		242C7DE5247F0BCB00CEFCEE /* AlphabetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetScene.swift; sourceTree = "<group>"; };
 		24516834247E383700BD4C1E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		24516836247E453E00BD4C1E /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		24516838247E491700BD4C1E /* QuestionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionManager.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				24153DEA247BBE3D005A3C66 /* AnimalScene.swift */,
 				24153E03247C24CC005A3C66 /* SolarSystemScene.swift */,
 				24153E11247C544A005A3C66 /* MathsScene.swift */,
+				242C7DE3247F07E800CEFCEE /* TestScene.swift */,
+				242C7DE5247F0BCB00CEFCEE /* AlphabetScene.swift */,
 			);
 			path = SceneViewController;
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				24153DF7247BE8B9005A3C66 /* SingleSolarSystemViewController.swift in Sources */,
 				24153E04247C24CC005A3C66 /* SolarSystemScene.swift in Sources */,
 				24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */,
+				242C7DE6247F0BCB00CEFCEE /* AlphabetScene.swift in Sources */,
+				242C7DE4247F07E800CEFCEE /* TestScene.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				240A654B247AF4D30084CB31 /* Animal.swift in Sources */,
