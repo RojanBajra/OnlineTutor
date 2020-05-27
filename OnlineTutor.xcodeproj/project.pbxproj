@@ -40,6 +40,7 @@
 		24183D742470642B009D74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D722470642B009D74B6 /* Main.storyboard */; };
 		24183D762470642C009D74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D752470642C009D74B6 /* Assets.xcassets */; };
 		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
+		24516835247E383700BD4C1E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516834247E383700BD4C1E /* TestViewController.swift */; };
 		24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */; };
 		24ABA2142479954A007C2DAF /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2132479954A007C2DAF /* Pages.swift */; };
 		24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2152479993C007C2DAF /* PagesManager.swift */; };
@@ -86,6 +87,7 @@
 		24183D752470642C009D74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24183D782470642C009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24516834247E383700BD4C1E /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		24ABA210247991D3007C2DAF /* DisplaySelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedViewController.swift; sourceTree = "<group>"; };
 		24ABA2132479954A007C2DAF /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		24ABA2152479993C007C2DAF /* PagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesManager.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				24153DF0247BD4CF005A3C66 /* SolarSystemTableViewController.swift */,
 				24153DF6247BE8B9005A3C66 /* SingleSolarSystemViewController.swift */,
 				24153E0B247C460F005A3C66 /* MathsTableViewController.swift */,
+				24516834247E383700BD4C1E /* TestViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				24153E10247C495D005A3C66 /* MathsManager.swift in Sources */,
 				240A6553247AFB530084CB31 /* AnimalViewController.swift in Sources */,
 				240A654D247AF5FA0084CB31 /* AnimalManager.swift in Sources */,
+				24516835247E383700BD4C1E /* TestViewController.swift in Sources */,
 				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24153E09247C42D2005A3C66 /* MathsTableViewCell.swift in Sources */,
 				24153E0C247C460F005A3C66 /* MathsTableViewController.swift in Sources */,
