@@ -17,9 +17,15 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("this is printing")
         setupUI()
         instantiatePages()
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
     }
     
     func instantiatePages() {

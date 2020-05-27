@@ -28,6 +28,11 @@ class TestViewController: UIViewController {
         setupUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("correct answers \(correctAnswers) total question \(currentQuestion)")
+    }
+    
     func setupUI() {
         lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
         setupOptions()
@@ -79,13 +84,17 @@ class TestViewController: UIViewController {
         
         if currentQuestion >= 5 {
             currentQuestion = 0
+            correctAnswers = 0
+            questionNumbers = []
             print("total correct answer is " + String(correctAnswers))
             showAlertMessage()
             
+        }else{
+            lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
+            setupOptions()
         }
         
-        lblQuestion.text = questionManager.getQuestion(dataPart: questionNumbers[currentQuestion])
-        setupOptions()
+        
     }
     
     func showAlertMessage() {
@@ -97,6 +106,8 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func btnCamera(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "MathsTableVC") as! MathsTableViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
