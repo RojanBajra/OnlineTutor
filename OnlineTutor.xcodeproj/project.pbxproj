@@ -51,6 +51,9 @@
 		24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */; };
 		24B8011E24805BAD009F7CC8 /* TestStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */; };
 		24B8012024805D33009F7CC8 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8011F24805D33009F7CC8 /* TestResultViewController.swift */; };
+		24B8012324805DDC009F7CC8 /* TestResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012124805DDC009F7CC8 /* TestResultTableViewCell.swift */; };
+		24B8012424805DDC009F7CC8 /* TestResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8012224805DDC009F7CC8 /* TestResultTableViewCell.xib */; };
+		24B8012624805FCC009F7CC8 /* TestDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012524805FCC009F7CC8 /* TestDashboardViewController.swift */; };
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
@@ -104,6 +107,9 @@
 		24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedARViewController.swift; sourceTree = "<group>"; };
 		24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartViewController.swift; sourceTree = "<group>"; };
 		24B8011F24805D33009F7CC8 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
+		24B8012124805DDC009F7CC8 /* TestResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultTableViewCell.swift; sourceTree = "<group>"; };
+		24B8012224805DDC009F7CC8 /* TestResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestResultTableViewCell.xib; sourceTree = "<group>"; };
+		24B8012524805FCC009F7CC8 /* TestDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -208,6 +214,7 @@
 				24516834247E383700BD4C1E /* TestViewController.swift */,
 				24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */,
 				24B8011F24805D33009F7CC8 /* TestResultViewController.swift */,
+				24B8012524805FCC009F7CC8 /* TestDashboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -229,6 +236,8 @@
 				24153E00247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib */,
 				24153E07247C42D2005A3C66 /* MathsTableViewCell.swift */,
 				24153E08247C42D2005A3C66 /* MathsTableViewCell.xib */,
+				24B8012124805DDC009F7CC8 /* TestResultTableViewCell.swift */,
+				24B8012224805DDC009F7CC8 /* TestResultTableViewCell.xib */,
 			);
 			path = xibCell;
 			sourceTree = "<group>";
@@ -305,6 +314,7 @@
 				24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */,
 				24183D762470642C009D74B6 /* Assets.xcassets in Resources */,
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
+				24B8012424805DDC009F7CC8 /* TestResultTableViewCell.xib in Resources */,
 				24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */,
 				240A6551247AFA900084CB31 /* AnimalTableViewCell.xib in Resources */,
 				24153E02247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.xib in Resources */,
@@ -343,6 +353,7 @@
 				24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,
 				24153DF5247BD6D2005A3C66 /* SolarSystemManager.swift in Sources */,
+				24B8012624805FCC009F7CC8 /* TestDashboardViewController.swift in Sources */,
 				24183D6D2470642B009D74B6 /* AppDelegate.swift in Sources */,
 				24516839247E491700BD4C1E /* QuestionManager.swift in Sources */,
 				24153DF1247BD4CF005A3C66 /* SolarSystemTableViewController.swift in Sources */,
@@ -354,6 +365,7 @@
 				24153E09247C42D2005A3C66 /* MathsTableViewCell.swift in Sources */,
 				24153E0C247C460F005A3C66 /* MathsTableViewController.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
+				24B8012324805DDC009F7CC8 /* TestResultTableViewCell.swift in Sources */,
 				24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */,
 				24125FBA24791BF500F4E544 /* ColorForApp.swift in Sources */,
 				24153E01247C2293005A3C66 /* StatisticsSingleSolarSystemTableViewCell.swift in Sources */,

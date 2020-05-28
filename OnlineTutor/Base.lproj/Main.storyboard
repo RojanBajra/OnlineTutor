@@ -451,7 +451,7 @@
         <!--Item 2-->
         <scene sceneID="v7T-uo-Nqi">
             <objects>
-                <viewController id="85B-3g-5S8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TestResultVC" id="85B-3g-5S8" customClass="TestResultViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z5c-fK-BFy"/>
                         <viewControllerLayoutGuide type="bottom" id="jc2-fr-0oa"/>
@@ -483,6 +483,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="8tj-IU-5v8"/>
+                    <connections>
+                        <outlet property="lblTitle" destination="rVS-ac-jc3" id="Ykz-9x-OVu"/>
+                        <outlet property="tableView" destination="Jwj-p2-kXB" id="7WR-g8-gLi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6R-4p-PAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -548,10 +552,10 @@
             </objects>
             <point key="canvasLocation" x="4828.985507246377" y="561.83035714285711"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Test Dashboard View Controller-->
         <scene sceneID="WY1-fh-ngT">
             <objects>
-                <tabBarController id="qAz-ZM-sH2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TestDashboardVC" id="qAz-ZM-sH2" customClass="TestDashboardViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="red-kE-Xql">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

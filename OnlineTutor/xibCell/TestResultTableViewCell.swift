@@ -10,6 +10,12 @@ import UIKit
 
 class TestResultTableViewCell: UITableViewCell {
 
+    static let identifier = "TestResultTVC"
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var lblQuestion: UILabel!
+    @IBOutlet weak var lblCorrect: UILabel!
+    @IBOutlet weak var lblIncorrect: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
