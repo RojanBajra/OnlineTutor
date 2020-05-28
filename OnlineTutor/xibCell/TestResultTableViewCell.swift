@@ -15,6 +15,7 @@ class TestResultTableViewCell: UITableViewCell {
     @IBOutlet weak var lblQuestion: UILabel!
     @IBOutlet weak var lblCorrect: UILabel!
     @IBOutlet weak var lblIncorrect: UILabel!
+    @IBOutlet weak var viewForTestResult: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -100,6 +100,7 @@ class TestViewController: UIViewController {
         currentQuestion = currentQuestion + 1
         
         if currentQuestion >= 5 {
+            AppDatabase.shareIntsance.insertIntoDb(totalQuestion: String(currentQuestion), totalCorrect: String(correctAnswers))
             showAlertMessage()
             currentQuestion = 0
             correctAnswers = 0

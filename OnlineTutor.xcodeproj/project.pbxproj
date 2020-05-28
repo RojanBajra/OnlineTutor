@@ -54,6 +54,8 @@
 		24B8012324805DDC009F7CC8 /* TestResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012124805DDC009F7CC8 /* TestResultTableViewCell.swift */; };
 		24B8012424805DDC009F7CC8 /* TestResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24B8012224805DDC009F7CC8 /* TestResultTableViewCell.xib */; };
 		24B8012624805FCC009F7CC8 /* TestDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012524805FCC009F7CC8 /* TestDashboardViewController.swift */; };
+		24B8012924806388009F7CC8 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012824806388009F7CC8 /* AppDatabase.swift */; };
+		24B8012B24806560009F7CC8 /* TestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8012A24806560009F7CC8 /* TestResult.swift */; };
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
@@ -110,6 +112,8 @@
 		24B8012124805DDC009F7CC8 /* TestResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultTableViewCell.swift; sourceTree = "<group>"; };
 		24B8012224805DDC009F7CC8 /* TestResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestResultTableViewCell.xib; sourceTree = "<group>"; };
 		24B8012524805FCC009F7CC8 /* TestDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDashboardViewController.swift; sourceTree = "<group>"; };
+		24B8012824806388009F7CC8 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		24B8012A24806560009F7CC8 /* TestResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResult.swift; sourceTree = "<group>"; };
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 		24183D6B2470642B009D74B6 /* OnlineTutor */ = {
 			isa = PBXGroup;
 			children = (
+				24B801272480636B009F7CC8 /* SQLite */,
 				24ABA21224799378007C2DAF /* Model */,
 				24125FB824791BA600F4E544 /* resources */,
 				24CCB5182471AFBE00DF435B /* utils */,
@@ -195,8 +200,17 @@
 				24153E0F247C495D005A3C66 /* MathsManager.swift */,
 				24516836247E453E00BD4C1E /* Question.swift */,
 				24516838247E491700BD4C1E /* QuestionManager.swift */,
+				24B8012A24806560009F7CC8 /* TestResult.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		24B801272480636B009F7CC8 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				24B8012824806388009F7CC8 /* AppDatabase.swift */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 		24CCB51024716DBB00DF435B /* ViewController */ = {
@@ -347,6 +361,7 @@
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				240A654B247AF4D30084CB31 /* Animal.swift in Sources */,
 				24153E0E247C48FF005A3C66 /* Maths.swift in Sources */,
+				24B8012B24806560009F7CC8 /* TestResult.swift in Sources */,
 				24153DFD247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift in Sources */,
 				24B8011E24805BAD009F7CC8 /* TestStartViewController.swift in Sources */,
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
@@ -364,6 +379,7 @@
 				24ABA2142479954A007C2DAF /* Pages.swift in Sources */,
 				24153E09247C42D2005A3C66 /* MathsTableViewCell.swift in Sources */,
 				24153E0C247C460F005A3C66 /* MathsTableViewController.swift in Sources */,
+				24B8012924806388009F7CC8 /* AppDatabase.swift in Sources */,
 				24CCB51A2471AFCF00DF435B /* Design.swift in Sources */,
 				24B8012324805DDC009F7CC8 /* TestResultTableViewCell.swift in Sources */,
 				24153DEE247BD32D005A3C66 /* SolarSystemTableViewCell.swift in Sources */,

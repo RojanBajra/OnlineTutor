@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+struct TestResult {
+    var id = 0
+    var totalQuestion = ""
+    var totalCorrect = ""
+    var totalIncorrect = ""
+    
+}
