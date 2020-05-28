@@ -32,7 +32,6 @@ class AppDatabase {
     }
     
     func insertIntoDb(totalQuestion: String, totalCorrect: String){
-        //date gernerator
         createDataBase()
         let insertData = "INSERT INTO testResult (totalQuestion, totalCorrect) VALUES ('\(totalQuestion)', '\(totalCorrect)');"
         
@@ -57,7 +56,6 @@ class AppDatabase {
 
         var stmt:OpaquePointer?
 
-        //        let queryString = "SELECT * FROM DiagnosticLists where priority != 0  AND priority_from_device = 1 AND status = 0;"
         let queryString = "SELECT * FROM testResult;"
 
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
@@ -71,8 +69,6 @@ class AppDatabase {
             let totalCorrect = String(cString: sqlite3_column_text(stmt, 2))
             let totalIncorrect = Int(totalQuestion)! - Int(totalCorrect)!
             
-            
-//            sqliteData.append(SqliteObject.init(id: Int(id), firstname: firstname, details: details, date: date))
             testData.append(
                 TestResult.init(
                     id: Int(id),
