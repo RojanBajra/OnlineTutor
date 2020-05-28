@@ -49,6 +49,8 @@
 		24ABA2142479954A007C2DAF /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2132479954A007C2DAF /* Pages.swift */; };
 		24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2152479993C007C2DAF /* PagesManager.swift */; };
 		24ABA2182479A067007C2DAF /* DisplaySelectedARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */; };
+		24B8011E24805BAD009F7CC8 /* TestStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */; };
+		24B8012024805D33009F7CC8 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B8011F24805D33009F7CC8 /* TestResultViewController.swift */; };
 		24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51124716DDE00DF435B /* DashboardViewController.swift */; };
 		24CCB51624716F9500DF435B /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */; };
 		24CCB51724716F9500DF435B /* DashboardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */; };
@@ -100,6 +102,8 @@
 		24ABA2132479954A007C2DAF /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 		24ABA2152479993C007C2DAF /* PagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesManager.swift; sourceTree = "<group>"; };
 		24ABA2172479A067007C2DAF /* DisplaySelectedARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySelectedARViewController.swift; sourceTree = "<group>"; };
+		24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStartViewController.swift; sourceTree = "<group>"; };
+		24B8011F24805D33009F7CC8 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
 		24CCB51124716DDE00DF435B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		24CCB51424716F9500DF435B /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		24CCB51524716F9500DF435B /* DashboardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				24153DF6247BE8B9005A3C66 /* SingleSolarSystemViewController.swift */,
 				24153E0B247C460F005A3C66 /* MathsTableViewController.swift */,
 				24516834247E383700BD4C1E /* TestViewController.swift */,
+				24B8011D24805BAD009F7CC8 /* TestStartViewController.swift */,
+				24B8011F24805D33009F7CC8 /* TestResultViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -327,10 +333,12 @@
 				242C7DE6247F0BCB00CEFCEE /* AlphabetScene.swift in Sources */,
 				242C7DE4247F07E800CEFCEE /* TestScene.swift in Sources */,
 				24CCB51224716DDE00DF435B /* DashboardViewController.swift in Sources */,
+				24B8012024805D33009F7CC8 /* TestResultViewController.swift in Sources */,
 				24125FBC2479535D00F4E544 /* DisplayCardViewController.swift in Sources */,
 				240A654B247AF4D30084CB31 /* Animal.swift in Sources */,
 				24153E0E247C48FF005A3C66 /* Maths.swift in Sources */,
 				24153DFD247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.swift in Sources */,
+				24B8011E24805BAD009F7CC8 /* TestStartViewController.swift in Sources */,
 				24ABA2162479993C007C2DAF /* PagesManager.swift in Sources */,
 				24153DF3247BD5B3005A3C66 /* SolarSystem.swift in Sources */,
 				24ABA211247991D3007C2DAF /* DisplaySelectedViewController.swift in Sources */,

@@ -10,21 +10,23 @@ import UIKit
 
 class TestStartViewController: UIViewController {
 
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var btnTest: UIButton!
+    @IBOutlet weak var viewForButton: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setupUI()
+    }
+
+    func setupUI() {
+        viewForButton.layer.cornerRadius = viewForButton.frame.width / 2
+        btnTest.layer.cornerRadius = viewForButton.frame.width / 2
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnTest(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "TestVC") as! TestViewController
+        vc.isAppearingFromHomePage = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
-    */
-
 }
