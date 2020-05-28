@@ -56,7 +56,7 @@ struct PagesManager {
             ),
             Pages(
                 pageName: "Test Yourself",
-                pageViewController: storyboard.instantiateViewController(identifier: "TestVC") as! TestViewController,
+                pageViewController: storyboard.instantiateViewController(identifier: "TestDashboardVC") as! TestDashboardViewController,
                 pageID: "TestVC",
                 pageIcon: "icon_test"
             )
