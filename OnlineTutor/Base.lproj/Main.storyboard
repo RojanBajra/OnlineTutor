@@ -304,52 +304,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Characters must be between 1 - 10." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4B-nZ-DyP">
-                                <rect key="frame" x="20" y="120" width="374" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-S2-5RF">
-                                <rect key="frame" x="20" y="145" width="374" height="30"/>
+                                <rect key="frame" x="20" y="120" width="374" height="30"/>
                                 <state key="normal" title="Display"/>
                                 <connections>
                                     <action selector="btnDisplay:" destination="7Kb-6K-ZKw" eventType="touchUpInside" id="uh0-nk-6ra"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjX-9O-Ktv">
-                                <rect key="frame" x="284" y="183" width="110" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="b2E-xf-U3M"/>
-                                </constraints>
-                                <state key="normal" title="How it works?"/>
-                                <connections>
-                                    <action selector="btnHowItWorks:" destination="7Kb-6K-ZKw" eventType="touchUpInside" id="nH6-Pc-9U5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6vH-CB-KE2" firstAttribute="trailing" secondItem="icj-YZ-qfG" secondAttribute="trailing" id="0XQ-kS-Nk1"/>
-                            <constraint firstItem="mjX-9O-Ktv" firstAttribute="trailing" secondItem="2dc-S2-5RF" secondAttribute="trailing" id="4s0-se-F4r"/>
                             <constraint firstAttribute="trailing" secondItem="icj-YZ-qfG" secondAttribute="trailing" constant="20" id="67m-4g-ByW"/>
-                            <constraint firstItem="2dc-S2-5RF" firstAttribute="top" secondItem="A4B-nZ-DyP" secondAttribute="bottom" constant="8" id="6Uc-pw-2LF"/>
-                            <constraint firstItem="2dc-S2-5RF" firstAttribute="trailing" secondItem="A4B-nZ-DyP" secondAttribute="trailing" id="Bbl-DZ-OYE"/>
                             <constraint firstItem="icj-YZ-qfG" firstAttribute="leading" secondItem="13W-69-utE" secondAttribute="leading" constant="20" id="CfP-nl-pya"/>
-                            <constraint firstItem="A4B-nZ-DyP" firstAttribute="trailing" secondItem="6vH-CB-KE2" secondAttribute="trailing" id="FFm-NX-er2"/>
-                            <constraint firstItem="A4B-nZ-DyP" firstAttribute="leading" secondItem="6vH-CB-KE2" secondAttribute="leading" id="LlW-XV-7uS"/>
                             <constraint firstItem="icj-YZ-qfG" firstAttribute="top" secondItem="F0h-zk-D1a" secondAttribute="bottom" id="NXy-zS-ffF"/>
-                            <constraint firstItem="A4B-nZ-DyP" firstAttribute="top" secondItem="6vH-CB-KE2" secondAttribute="bottom" constant="8" id="iWX-eD-FZW"/>
-                            <constraint firstItem="2dc-S2-5RF" firstAttribute="leading" secondItem="A4B-nZ-DyP" secondAttribute="leading" id="ndc-CD-VDd"/>
-                            <constraint firstItem="mjX-9O-Ktv" firstAttribute="top" secondItem="2dc-S2-5RF" secondAttribute="bottom" constant="8" id="tKh-9M-Ny6"/>
+                            <constraint firstItem="2dc-S2-5RF" firstAttribute="trailing" secondItem="6vH-CB-KE2" secondAttribute="trailing" id="pzh-xF-6qP"/>
+                            <constraint firstItem="2dc-S2-5RF" firstAttribute="top" secondItem="6vH-CB-KE2" secondAttribute="bottom" constant="8" id="tHY-TI-NRY"/>
+                            <constraint firstItem="2dc-S2-5RF" firstAttribute="leading" secondItem="6vH-CB-KE2" secondAttribute="leading" id="tx0-Wn-RWb"/>
                             <constraint firstItem="6vH-CB-KE2" firstAttribute="top" secondItem="icj-YZ-qfG" secondAttribute="bottom" constant="8" id="vJv-ZJ-Rms"/>
                             <constraint firstItem="6vH-CB-KE2" firstAttribute="leading" secondItem="icj-YZ-qfG" secondAttribute="leading" id="zCr-Dz-Pi6"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnDisplay" destination="2dc-S2-5RF" id="Oc0-eu-thW"/>
-                        <outlet property="btnHowItWorks" destination="mjX-9O-Ktv" id="ECF-Tj-BAl"/>
-                        <outlet property="lblCharacter" destination="A4B-nZ-DyP" id="WVR-Qm-eaC"/>
                         <outlet property="lblTitle" destination="icj-YZ-qfG" id="NFS-8V-VMl"/>
                         <outlet property="txtCharacter" destination="6vH-CB-KE2" id="997-bc-3O9"/>
                     </connections>
@@ -448,7 +425,7 @@
             </objects>
             <point key="canvasLocation" x="2844.9275362318845" y="874.55357142857144"/>
         </scene>
-        <!--Item 2-->
+        <!--Test Result-->
         <scene sceneID="v7T-uo-Nqi">
             <objects>
                 <viewController storyboardIdentifier="TestResultVC" id="85B-3g-5S8" customClass="TestResultViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
@@ -482,7 +459,7 @@
                             <constraint firstItem="jc2-fr-0oa" firstAttribute="top" secondItem="Jwj-p2-kXB" secondAttribute="bottom" id="zu8-g1-e1H"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="8tj-IU-5v8"/>
+                    <tabBarItem key="tabBarItem" title="Test Result" image="doc.fill" catalog="system" id="8tj-IU-5v8"/>
                     <connections>
                         <outlet property="lblTitle" destination="rVS-ac-jc3" id="Ykz-9x-OVu"/>
                         <outlet property="tableView" destination="Jwj-p2-kXB" id="7WR-g8-gLi"/>
@@ -492,7 +469,7 @@
             </objects>
             <point key="canvasLocation" x="4828.985507246377" y="1211.3839285714284"/>
         </scene>
-        <!--Item 1-->
+        <!--Test-->
         <scene sceneID="rVy-BD-Ec7">
             <objects>
                 <viewController storyboardIdentifier="TestStartVC" id="7Kl-zo-Jv2" customClass="TestStartViewController" customModule="OnlineTutor" customModuleProvider="target" sceneMemberID="viewController">
@@ -541,7 +518,7 @@
                             <constraint firstItem="tWb-pL-l4R" firstAttribute="centerX" secondItem="GEs-RA-DVl" secondAttribute="centerX" id="udh-MO-aj1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="N6I-kV-1cq"/>
+                    <tabBarItem key="tabBarItem" title="Test" image="book.fill" catalog="system" id="N6I-kV-1cq"/>
                     <connections>
                         <outlet property="btnTest" destination="92l-Hv-JSe" id="If0-th-aLv"/>
                         <outlet property="lblTitle" destination="8Zl-z4-X9o" id="fB4-fn-oHX"/>
@@ -685,5 +662,7 @@
     </scenes>
     <resources>
         <image name="New Project" width="270" height="152"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="doc.fill" catalog="system" width="115" height="128"/>
     </resources>
 </document>

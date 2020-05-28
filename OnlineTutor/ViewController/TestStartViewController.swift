@@ -20,7 +20,11 @@ class TestStartViewController: UIViewController {
     }
 
     func setupUI() {
+        Design.shareInstance.addDropShadow(view: viewForButton, shadowColor: UIColor.black, opacity: 0.7, shadowOffset: CGSize(width: 1, height: 1), radius: 5)
+        
+        viewForButton.backgroundColor = ColorForApp.shareInstance.colorPrimary()
         viewForButton.layer.cornerRadius = viewForButton.frame.width / 2
+        
         btnTest.layer.cornerRadius = viewForButton.frame.width / 2
     }
     
