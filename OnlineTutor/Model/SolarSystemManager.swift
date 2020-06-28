@@ -9,6 +9,17 @@
 import Foundation
 
 struct SolarSystemManager {
+    
+//    SolarSystem(
+//        planetName: "Saturn",
+//        radius: "58,232 km",
+//        mass: "5.683 × 10^26 kg",
+//        gravity: "10.44 m/s^2",
+//        distanceFromSun: "1.4959 billion km",
+//        description: "Saturn is a gas giant made up mostly of hydrogen and helium. Saturn's volume is greater than 760 Earths, and it is the second most massive planet in the solar system, about 95 times Earth's mass. The Ringed Planet is the least dense of all the planets, and is the only one less dense than water.",
+//        radiusAR: 9.14
+//    ),
+    
     let listOfPlanets = [
         SolarSystem(
             planetName: "Mercury",
@@ -54,15 +65,6 @@ struct SolarSystemManager {
             distanceFromSun: "774.49 million km",
             description: "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined.",
             radiusAR: 10.97
-        ),
-        SolarSystem(
-            planetName: "Saturn",
-            radius: "58,232 km",
-            mass: "5.683 × 10^26 kg",
-            gravity: "10.44 m/s^2",
-            distanceFromSun: "1.4959 billion km",
-            description: "Saturn is a gas giant made up mostly of hydrogen and helium. Saturn's volume is greater than 760 Earths, and it is the second most massive planet in the solar system, about 95 times Earth's mass. The Ringed Planet is the least dense of all the planets, and is the only one less dense than water.",
-            radiusAR: 9.14
         ),
         SolarSystem(
             planetName: "Uranus",
