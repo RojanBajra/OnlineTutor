@@ -16,6 +16,13 @@ struct PagesManager {
         self.pageData = []
     }
     
+//    Pages(
+//        pageName: "Draw Numbers",
+//        pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
+//        pageID: "DisplayCardVC",
+//        pageIcon: "icon_doodle"
+//    ),
+    
     init(storyboard: UIStoryboard) {
         self.pageData = [
             Pages(
@@ -41,12 +48,6 @@ struct PagesManager {
                 pageViewController: storyboard.instantiateViewController(identifier: "MathsTableVC") as! MathsTableViewController,
                 pageID: "MathsTableVC",
                 pageIcon: "icon_maths"
-            ),
-            Pages(
-                pageName: "Draw Numbers",
-                pageViewController: storyboard.instantiateViewController(identifier: "DisplayCardVC") as! DisplayCardViewController,
-                pageID: "DisplayCardVC",
-                pageIcon: "icon_doodle"
             ),
             Pages(
                 pageName: "Solar System",
