@@ -91,6 +91,70 @@ struct QuestionManager {
             isImage: true,
             questionType: "Animal"
         ),
+        Question(
+            questionTitle: "What is the phylum of the given animal?",
+            correctAnswer: "Chordata",
+            options: ["Arthropod", "Chordata", "Reptiles"],
+            image3d: "dog",
+            isImage: true,
+            questionType: "Animal"
+        ),
+        Question(
+            questionTitle: "What is the radius of the given figure?",
+            correctAnswer: "mercury",
+            options: ["mercury", "earth", "sun"],
+            image3d: "mercury",
+            isImage: true,
+            questionType: "SolarSystem"
+        ),
+        Question(
+            questionTitle: "What is the radius of the given figure?",
+            correctAnswer: "venus",
+            options: ["mercury", "earth", "venus"],
+            image3d: "venus",
+            isImage: true,
+            questionType: "AnSolarSystemimal"
+        ),
+        Question(
+            questionTitle: "What is the radius of the given figure?",
+            correctAnswer: "mars",
+            options: ["mercury", "mars", "venus"],
+            image3d: "mars",
+            isImage: true,
+            questionType: "SolarSystem"
+        ),
+        Question(
+            questionTitle: "Which shape is shown in the figure?",
+            correctAnswer: "Torus",
+            options: ["Cuboid", "Cube", "Torus"],
+            image3d: "torus",
+            isImage: true,
+            questionType: "Maths"
+        ),
+        Question(
+            questionTitle: "Which shape is shown in the figure?",
+            correctAnswer: "Cylinder",
+            options: ["Sphere", "Cylinder", "Torus"],
+            image3d: "cylinder",
+            isImage: true,
+            questionType: "Maths"
+        ),
+        Question(
+            questionTitle: "Which shape is shown in the figure?",
+            correctAnswer: "Pyramid",
+            options: ["Pyramid", "Cylinder", "Cube"],
+            image3d: "pyramid",
+            isImage: true,
+            questionType: "Maths"
+        ),
+        Question(
+            questionTitle: "Which animal is shown in the figure?",
+            correctAnswer: "Horse",
+            options: ["Dog", "Horse", "Shark"],
+            image3d: "horse",
+            isImage: true,
+            questionType: "Animal"
+        ),
     ]
     
     func getQuestion(dataPart: Int) -> String {

@@ -39,7 +39,6 @@
 		24183D712470642B009D74B6 /* DisplayARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24183D702470642B009D74B6 /* DisplayARViewController.swift */; };
 		24183D742470642B009D74B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D722470642B009D74B6 /* Main.storyboard */; };
 		24183D762470642C009D74B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24183D752470642C009D74B6 /* Assets.xcassets */; };
-		24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24183D772470642C009D74B6 /* LaunchScreen.storyboard */; };
 		242C7DE4247F07E800CEFCEE /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7DE3247F07E800CEFCEE /* TestScene.swift */; };
 		242C7DE6247F0BCB00CEFCEE /* AlphabetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242C7DE5247F0BCB00CEFCEE /* AlphabetScene.swift */; };
 		24516835247E383700BD4C1E /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24516834247E383700BD4C1E /* TestViewController.swift */; };
@@ -96,7 +95,6 @@
 		24183D702470642B009D74B6 /* DisplayARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayARViewController.swift; sourceTree = "<group>"; };
 		24183D732470642B009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24183D752470642C009D74B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		24183D782470642C009D74B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24183D7A2470642C009D74B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		242C7DE3247F07E800CEFCEE /* TestScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
 		242C7DE5247F0BCB00CEFCEE /* AlphabetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetScene.swift; sourceTree = "<group>"; };
@@ -181,7 +179,6 @@
 				24183D6E2470642B009D74B6 /* art.scnassets */,
 				24183D722470642B009D74B6 /* Main.storyboard */,
 				24183D752470642C009D74B6 /* Assets.xcassets */,
-				24183D772470642C009D74B6 /* LaunchScreen.storyboard */,
 				24183D7A2470642C009D74B6 /* Info.plist */,
 			);
 			path = OnlineTutor;
@@ -325,7 +322,6 @@
 				24183D6F2470642B009D74B6 /* art.scnassets in Resources */,
 				24153E0A247C42D2005A3C66 /* MathsTableViewCell.xib in Resources */,
 				24153DFE247BEC6B005A3C66 /* SingleSolarSystemTableViewCell.xib in Resources */,
-				24183D792470642C009D74B6 /* LaunchScreen.storyboard in Resources */,
 				24183D762470642C009D74B6 /* Assets.xcassets in Resources */,
 				24183D742470642B009D74B6 /* Main.storyboard in Resources */,
 				24B8012424805DDC009F7CC8 /* TestResultTableViewCell.xib in Resources */,
@@ -397,14 +393,6 @@
 				24183D732470642B009D74B6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		24183D772470642C009D74B6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24183D782470642C009D74B6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
