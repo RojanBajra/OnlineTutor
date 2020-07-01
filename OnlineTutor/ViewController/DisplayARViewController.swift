@@ -15,8 +15,10 @@ class DisplayARViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet var sceneView: ARSCNView!
     
     let cards: [String : String] = [
-        "one" : "1",
-        "two" : "2"
+        "one":"1",
+        "two":"2",
+        "nine" : "9",
+        "z":"Z"
     ]
     
     override func viewDidLoad() {
@@ -38,7 +40,7 @@ class DisplayARViewController: UIViewController, ARSCNViewDelegate {
 
         if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "Number Cards", bundle: Bundle.main) {
             configuration.trackingImages = imageToTrack
-            configuration.maximumNumberOfTrackedImages = 2
+            configuration.maximumNumberOfTrackedImages = 1
         }
 
         // Run the view's session
@@ -63,6 +65,7 @@ class DisplayARViewController: UIViewController, ARSCNViewDelegate {
             let planeNode = SCNNode(geometry: plane)
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
+            print(cards[imageAnchor.referenceImage.name!]!)
             planeNode.addChildNode(addNode(valueToDisplay: cards[imageAnchor.referenceImage.name!]!, planeNode: planeNode))
             
         }
